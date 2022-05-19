@@ -15,9 +15,9 @@ dependencies {
 }
 ```
 
-|Within your app|Written file|
-|--|--|
-|![Screenshot from 2022-05-18 23-08-16](https://user-images.githubusercontent.com/10187351/169202505-44cafd32-ca63-4537-b40e-7198db651ba6.png)|![Screenshot from 2022-05-18 23-08-39](https://user-images.githubusercontent.com/10187351/169202503-9d887b6f-eedd-44c4-9826-da479c542485.png)|
+|Within your server|Written file|On a user's RSS reader app|
+|--|--|--|
+|![Screenshot from 2022-05-18 23-08-16](https://user-images.githubusercontent.com/10187351/169202505-44cafd32-ca63-4537-b40e-7198db651ba6.png)|![Screenshot from 2022-05-18 23-08-39](https://user-images.githubusercontent.com/10187351/169202503-9d887b6f-eedd-44c4-9826-da479c542485.png)|<img alt="image" src="https://user-images.githubusercontent.com/10187351/169203679-d476fb41-5640-4683-ac18-31fa1a8aee9b.png" width="200px" />|
 
 ## What is RSS? 
 
