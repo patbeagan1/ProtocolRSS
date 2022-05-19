@@ -1,6 +1,20 @@
 # ProtocolRSS
 A kotlin implementation of the RSS protocol. Derived from https://www.rssboard.org/rss-specification
 
+## Installation
+
+Available via 
+```groovy
+repositories {
+    mavenLocal() // more coming soon
+}
+
+dependencies {
+    def versionProtocolRss = "0.3-SNAPSHOT"
+    implementation("dev.patbeagan1:protocol-rss:$versionProtocolRss")
+}
+```
+
 ## What is RSS? 
 
 RSS stands for `Really Simple Syndication`. 
