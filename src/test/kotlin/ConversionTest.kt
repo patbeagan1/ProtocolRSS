@@ -17,7 +17,7 @@ internal class ConversionTest {
         JacksonXmlModule().apply { setDefaultUseWrapper(false) }
     ).apply {
         enable(SerializationFeature.INDENT_OUTPUT)
-        setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        setSerializationInclusion(JsonInclude.Include.NON_NULL)
     }
 
     private val writer = RssWriter(xmlMapper)
@@ -69,7 +69,7 @@ internal class ConversionTest {
               </channel>
             </rss>
             
-        """.trimIndent()
+    """.trimIndent()
 
     private val kotlin = Rss(
         version = "2.0",
@@ -125,4 +125,3 @@ internal class ConversionTest {
         assertEquals(kotlin, reader.process(xml))
     }
 }
-

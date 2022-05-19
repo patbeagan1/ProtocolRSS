@@ -14,7 +14,7 @@ class RssWriter(
     ).apply {
         enable(SerializationFeature.INDENT_OUTPUT)
         enable(SerializationFeature.FAIL_ON_SELF_REFERENCES)
-        setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        setSerializationInclusion(JsonInclude.Include.NON_NULL)
     }
 ) {
     fun process(data: Rss) = "$header\n${xmlMapper.writeValueAsString(data)}"

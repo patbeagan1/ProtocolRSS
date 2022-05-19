@@ -1,7 +1,4 @@
-import com.fasterxml.jackson.annotation.JsonInclude
-import com.fasterxml.jackson.databind.SerializationFeature
-import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule
-import com.fasterxml.jackson.dataformat.xml.XmlMapper
+
 import org.junit.jupiter.api.Test
 import rss.Category
 import rss.Channel
@@ -11,13 +8,11 @@ import rss.Guid
 import rss.Image
 import rss.Item
 import rss.Rss
-import rss.RssReader
+import rss.RssWriter
 import rss.SkipDays
 import rss.Source
-import rss.RssWriter
 import java.io.File
 import java.time.Instant
-import kotlin.test.assertEquals
 
 internal class MainKtTest {
     val rssWriter = RssWriter()
@@ -92,7 +87,7 @@ internal class MainKtTest {
                         <p>
                             test
                         </p>
-                    """.trimIndent(),
+                        """.trimIndent(),
                         "author",
                         listOf(Category("cats", "cat")),
                         "commenturl",

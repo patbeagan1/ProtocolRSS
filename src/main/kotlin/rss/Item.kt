@@ -2,7 +2,6 @@ package rss
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
-import java.util.UUID
 
 @JsonPropertyOrder(
     "title",
