@@ -17,12 +17,12 @@ class RssWriter(
         setSerializationInclusion(JsonInclude.Include.NON_NULL)
     }
 ) {
-    fun process(data: Rss) = "$header\n${xmlMapper.writeValueAsString(data)}"
+    fun convertToXML(data: Rss) = "$header\n${xmlMapper.writeValueAsString(data)}"
 
     fun writeToFile(data: Rss, file: File) {
         try {
             FileOutputStream(file).use {
-                process(data).forEach { c -> it.write(c.code) }
+                convertToXML(data).forEach { c -> it.write(c.code) }
             }
         } catch (e: FileNotFoundException) {
             println("File Not Found: $e")

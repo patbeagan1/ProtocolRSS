@@ -18,7 +18,7 @@ class RssReader(
         setSerializationInclusion(JsonInclude.Include.NON_NULL)
     }
 ) {
-    fun process(data: String): Rss? = try {
+    fun convertToRSS(data: String): Rss? = try {
         xmlMapper.readValue(data, Rss::class.java)
     } catch (e: InvalidDefinitionException) {
         println("Invalid XML file.\nFound: $e")
@@ -28,7 +28,7 @@ class RssReader(
     fun readFromFile(file: File): Rss? {
         try {
             FileInputStream(file).use { fileInputStream ->
-                return fileInputStream.readAllBytes().toString().let { process(it) }
+                return fileInputStream.readAllBytes().toString().let { convertToRSS(it) }
             }
         } catch (e: FileNotFoundException) {
             println("File Not Found: $e")

@@ -93,7 +93,7 @@ data class Channel(
 
     @JvmField
     @field:JacksonXmlProperty
-    val item: List<Item>? = null,
+    var item: List<Item>? = null,
 
     /**
      * The language the channel is written in.

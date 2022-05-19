@@ -101,6 +101,6 @@ internal class MainKtTest {
             )
         )
         rssWriter.writeToFile(data, File("out-feed.xml"))
-        println(rssWriter.process(data))
+        println(rssWriter.convertToXML(data))
     }
 }

@@ -117,11 +117,11 @@ internal class ConversionTest {
 
     @Test
     fun `test conversion to xml`() {
-        assertEquals(xml, writer.process(kotlin))
+        assertEquals(xml, writer.convertToXML(kotlin))
     }
 
     @Test
     fun `test conversion to kotlin`() {
-        assertEquals(kotlin, reader.process(xml))
+        assertEquals(kotlin, reader.convertToRSS(xml))
     }
 }
