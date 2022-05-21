@@ -23,8 +23,9 @@ repositories {
 
 dependencies {
     api("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.3")
-
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
     testImplementation(kotlin("test"))
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2") // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
 }
 
@@ -34,6 +35,11 @@ java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(11))
     }
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
 }
 
 /**
@@ -85,6 +91,16 @@ tasks.jacocoTestReport {
         xml.required.set(false)
         csv.required.set(false)
         html.outputLocation.set(layout.buildDirectory.dir("jacocoHtml"))
+    }
+}
+
+tasks.register("openJacocoReport") {
+    dependsOn(tasks.jacocoTestReport)
+    doLast {
+        val root = projectDir.path
+        exec {
+            commandLine("firefox", "$root/build/jacocoHtml/index.html")
+        }
     }
 }
 

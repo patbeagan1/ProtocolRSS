@@ -2,6 +2,7 @@ package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.annotation.JsonRootName
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+import dev.patbeagan.protocolrss.util.RssFileReader
 import dev.patbeagan.protocolrss.util.RssReader
 import dev.patbeagan.protocolrss.util.RssWriter
 import java.io.File
@@ -30,23 +31,24 @@ data class Rss(
         }
     }
 
-    fun toXML(rssWriter: RssWriter = RssWriter()) = rssWriter.serialize(this)
-    fun writeToFile(
+    fun serializeToXML(rssWriter: RssWriter = RssWriter()) = rssWriter.serialize(this)
+    suspend fun writeToFile(
         file: File,
         rssWriter: RssWriter = RssWriter(),
-    ) = toXML(rssWriter).writeToFile(file)
+    ) = serializeToXML(rssWriter).writeToFile(file)
 
     companion object {
-        fun from(
+        suspend fun from(
             file: File,
-            rssReader: RssReader = RssReader(),
-        ): Rss? = rssReader.readFromFile(file)
+            rssReader: RssFileReader = RssFileReader(),
+            config: Rss.() -> Unit = {},
+        ): Rss? = rssReader.readFromFile(file)?.apply { config(this) }
 
         fun from(
             input: String,
             rssReader: RssReader = RssReader(),
             config: Rss.() -> Unit = {},
-        ): Rss? = rssReader.convertToRSS(input)?.apply { config(this) }
+        ): Rss? = rssReader.deserializeOrNull(input)?.apply { config(this) }
 
         fun create(
             title: String,

@@ -187,16 +187,18 @@ public final class dev/patbeagan/protocolrss/core/Rss {
 	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Rss;Ldev/patbeagan/protocolrss/core/Channel;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Rss;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
+	public final fun serializeToXML-_TUXqK4 (Ldev/patbeagan/protocolrss/util/RssWriter;)Ljava/lang/String;
+	public static synthetic fun serializeToXML-_TUXqK4$default (Ldev/patbeagan/protocolrss/core/Rss;Ldev/patbeagan/protocolrss/util/RssWriter;ILjava/lang/Object;)Ljava/lang/String;
 	public fun toString ()Ljava/lang/String;
-	public final fun toXML (Ldev/patbeagan/protocolrss/util/RssWriter;)Ljava/lang/String;
-	public static synthetic fun toXML$default (Ldev/patbeagan/protocolrss/core/Rss;Ldev/patbeagan/protocolrss/util/RssWriter;ILjava/lang/Object;)Ljava/lang/String;
+	public final fun writeToFile (Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssWriter;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun writeToFile$default (Ldev/patbeagan/protocolrss/core/Rss;Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssWriter;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 }
 
 public final class dev/patbeagan/protocolrss/core/Rss$Companion {
 	public final fun create (Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/protocolrss/core/Rss;
-	public final fun from (Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssReader;)Ldev/patbeagan/protocolrss/core/Rss;
+	public final fun from (Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssFileReader;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun from (Ljava/lang/String;Ldev/patbeagan/protocolrss/util/RssReader;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/protocolrss/core/Rss;
-	public static synthetic fun from$default (Ldev/patbeagan/protocolrss/core/Rss$Companion;Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssReader;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Rss;
+	public static synthetic fun from$default (Ldev/patbeagan/protocolrss/core/Rss$Companion;Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssFileReader;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public static synthetic fun from$default (Ldev/patbeagan/protocolrss/core/Rss$Companion;Ljava/lang/String;Ldev/patbeagan/protocolrss/util/RssReader;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Rss;
 }
 
@@ -253,27 +255,58 @@ public final class dev/patbeagan/protocolrss/core/TextInput {
 }
 
 public final class dev/patbeagan/protocolrss/util/Const {
+	public static final field DefaultString Ljava/lang/String;
 	public static final field INSTANCE Ldev/patbeagan/protocolrss/util/Const;
-	public static final field defaultString Ljava/lang/String;
+	public final fun getDefaultXMLMapper ()Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;
 }
 
-public final class dev/patbeagan/protocolrss/util/RssReader {
+public final class dev/patbeagan/protocolrss/util/RssFileReader {
+	public fun <init> ()V
+	public fun <init> (Ldev/patbeagan/protocolrss/util/RssReader;)V
+	public synthetic fun <init> (Ldev/patbeagan/protocolrss/util/RssReader;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun readFromFile (Ljava/io/File;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/patbeagan/protocolrss/util/RssReader : dev/patbeagan/protocolrss/util/base/RssDeserializer {
 	public fun <init> ()V
 	public fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;)V
 	public synthetic fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun convertToRSS (Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Rss;
-	public final fun readFromFile (Ljava/io/File;)Ldev/patbeagan/protocolrss/core/Rss;
+	public fun deserialize (Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Rss;
+	public fun deserializeOrNull (Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Rss;
 }
 
-public final class dev/patbeagan/protocolrss/util/RssWriter {
+public final class dev/patbeagan/protocolrss/util/RssString {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/patbeagan/protocolrss/util/RssString;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+	public static final fun writeToFile-impl (Ljava/lang/String;Ljava/io/File;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/patbeagan/protocolrss/util/RssWriter : dev/patbeagan/protocolrss/util/base/RssSerializer {
 	public static final field Companion Ldev/patbeagan/protocolrss/util/RssWriter$Companion;
 	public fun <init> ()V
 	public fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;)V
 	public synthetic fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun convertToXML (Ldev/patbeagan/protocolrss/core/Rss;)Ljava/lang/String;
-	public final fun writeToFile (Ldev/patbeagan/protocolrss/core/Rss;Ljava/io/File;)V
+	public fun serialize-_TUXqK4 (Ldev/patbeagan/protocolrss/core/Rss;)Ljava/lang/String;
 }
 
 public final class dev/patbeagan/protocolrss/util/RssWriter$Companion {
+}
+
+public abstract interface class dev/patbeagan/protocolrss/util/base/RssDeserializer {
+	public abstract fun deserialize (Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Rss;
+	public abstract fun deserializeOrNull (Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Rss;
+}
+
+public abstract interface class dev/patbeagan/protocolrss/util/base/RssSerializer {
+	public abstract fun serialize-_TUXqK4 (Ldev/patbeagan/protocolrss/core/Rss;)Ljava/lang/String;
 }
 

@@ -7,6 +7,8 @@ import dev.patbeagan.protocolrss.core.Item
 import dev.patbeagan.protocolrss.core.Rss
 import dev.patbeagan.protocolrss.core.SkipDays
 import dev.patbeagan.protocolrss.util.RssWriter
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 import java.io.File
 import java.net.URL
@@ -15,6 +17,7 @@ import java.time.Instant
 internal class FileWriterTest {
     private val rssWriter = RssWriter()
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun `test writing to a file works correctly`() {
         val data = Rss(
@@ -85,7 +88,9 @@ internal class FileWriterTest {
                 pubDate = "123"
             )
         )
-        rssWriter.serialize(data).writeToFile(File("out-feed.xml"))
+        runTest {
+            rssWriter.serialize(data).writeToFile(File("out-feed2.xml"))
+        }
         println(rssWriter.serialize(data))
     }
 }

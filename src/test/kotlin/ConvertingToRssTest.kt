@@ -11,8 +11,7 @@ class ConvertingToRssTest {
 
     @Test
     fun `test converting via reader`() {
-        val rss = rssReader.convertToRSS(DemoBlogXML)
-        assertNotNull(rss)
+        val rss = rssReader.deserialize(DemoBlogXML)
         assertEquals(DemoBlogRss, rss)
     }
 

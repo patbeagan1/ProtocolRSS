@@ -4,7 +4,6 @@ import dev.patbeagan.protocolrss.util.RssReader
 import dev.patbeagan.protocolrss.util.RssWriter
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertNotNull
 
 class AddItemTest {
     private val rssWriter = RssWriter()
@@ -12,8 +11,7 @@ class AddItemTest {
 
     @Test
     fun `test adding an item via a reader and a writer`() {
-        val rss = rssReader.convertToRSS(SampleWithoutAnyItems)
-        assertNotNull(rss)
+        val rss = rssReader.deserialize(SampleWithoutAnyItems)
         val actual = rss.apply {
             addItem(
                 Item(title = "title", description = "desc")
@@ -28,7 +26,7 @@ class AddItemTest {
     fun `test add item works as expected when converting back to xml`() {
         val actual = Rss.from(SampleWithoutAnyItems) {
             addItem(Item(title = "title", description = "desc"))
-        }?.toXML()?.value
+        }?.serializeToXML()?.value
 
         assertEquals(SampleWithOneItem, actual)
     }

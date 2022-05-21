@@ -2,7 +2,7 @@ package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
-import dev.patbeagan.protocolrss.util.Const.defaultString
+import dev.patbeagan.protocolrss.util.Const.DefaultString
 import java.net.URL
 
 @JsonPropertyOrder(
@@ -27,7 +27,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    var title: String = defaultString,
+    var title: String = DefaultString,
 
     /**
      * The URL to the HTML website corresponding to the channel.
@@ -41,7 +41,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    var description: String = defaultString,
+    var description: String = DefaultString,
 
     /**
      * Specify one or more categories that the channel belongs to.

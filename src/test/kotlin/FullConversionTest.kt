@@ -123,6 +123,6 @@ internal class FullConversionTest {
 
     @Test
     fun `test conversion to kotlin`() {
-        assertEquals(kotlin, reader.convertToRSS(xml))
+        assertEquals(kotlin, reader.deserializeOrNull(xml))
     }
 }

@@ -1,0 +1,1 @@
+./gradlew apiDump ktlintFormat
