@@ -31,6 +31,10 @@ data class Rss(
     }
 
     fun toXML(rssWriter: RssWriter = RssWriter()) = rssWriter.convertToXML(this)
+    fun writeToFile(
+        file: File,
+        rssWriter: RssWriter = RssWriter()
+    ) = rssWriter.writeToFile(this, file)
 
     companion object {
         fun from(
