@@ -2,6 +2,7 @@ import dev.patbeagan.protocolrss.core.Item
 import dev.patbeagan.protocolrss.core.Rss
 import dev.patbeagan.protocolrss.util.RssReader
 import org.junit.jupiter.api.Test
+import java.net.URL
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 
@@ -25,7 +26,7 @@ class ConvertingToRssTest {
     companion object {
         private val DemoBlogRss = Rss.create(
             title = "My Blog",
-            link = "https://example.com",
+            link = URL("https://example.com"),
             description = "A blog about me"
         ) {
             item = listOf(

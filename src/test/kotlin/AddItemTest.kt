@@ -39,7 +39,7 @@ class AddItemTest {
             <rss version="2.0.1">
               <channel>
                 <title>My BLog</title>
-                <link>UNKNOWN</link>
+                <link>https://example.com</link>
                 <description>UNKNOWN</description>
                 <item>
                   <title>title</title>
@@ -55,7 +55,7 @@ class AddItemTest {
             <rss version="2.0.1">
               <channel>
                 <title>My BLog</title>
-                <link>UNKNOWN</link>
+                <link>https://example.com</link>
                 <description>UNKNOWN</description>
               </channel>
             </rss>

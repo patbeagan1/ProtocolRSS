@@ -9,6 +9,7 @@ import dev.patbeagan.protocolrss.core.SkipDays
 import dev.patbeagan.protocolrss.util.RssWriter
 import org.junit.jupiter.api.Test
 import java.io.File
+import java.net.URL
 import java.time.Instant
 
 internal class FileWriterTest {
@@ -18,7 +19,7 @@ internal class FileWriterTest {
     fun `test writing to a file works correctly`() {
         val data = Rss(
             channel = Channel(
-                "title", "link", "description", listOf(Category("gardening")),
+                "title", URL("https://example.com"), "description", listOf(Category("gardening")),
                 Cloud(
                     domain = "domain",
                     port = 80,

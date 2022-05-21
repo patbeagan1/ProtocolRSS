@@ -23,7 +23,7 @@ public final class dev/patbeagan/protocolrss/core/Channel {
 	public field item Ljava/util/List;
 	public field language Ljava/lang/String;
 	public field lastBuildDate Ljava/lang/String;
-	public field link Ljava/lang/String;
+	public field link Ljava/net/URL;
 	public field managingEditor Ljava/lang/String;
 	public field pubDate Ljava/lang/String;
 	public field rating Ljava/lang/String;
@@ -34,8 +34,8 @@ public final class dev/patbeagan/protocolrss/core/Channel {
 	public field ttl Ljava/lang/Integer;
 	public field webMaster Ljava/lang/String;
 	public fun <init> ()V
-	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/Integer;Ljava/lang/String;)V
-	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/Integer;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/Integer;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/Integer;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component10 ()Ljava/util/List;
 	public final fun component11 ()Ljava/lang/String;
@@ -47,7 +47,7 @@ public final class dev/patbeagan/protocolrss/core/Channel {
 	public final fun component17 ()Ldev/patbeagan/protocolrss/core/SkipHours;
 	public final fun component18 ()Ldev/patbeagan/protocolrss/core/TextInput;
 	public final fun component19 ()Ljava/lang/Integer;
-	public final fun component2 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/net/URL;
 	public final fun component20 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/util/List;
@@ -56,8 +56,8 @@ public final class dev/patbeagan/protocolrss/core/Channel {
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/lang/String;
 	public final fun component9 ()Ldev/patbeagan/protocolrss/core/Image;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/Integer;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Channel;
-	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Channel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/Integer;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Channel;
+	public final fun copy (Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/Integer;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Channel;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Channel;Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/Integer;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Channel;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
@@ -193,7 +193,7 @@ public final class dev/patbeagan/protocolrss/core/Rss {
 }
 
 public final class dev/patbeagan/protocolrss/core/Rss$Companion {
-	public final fun create (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/protocolrss/core/Rss;
+	public final fun create (Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/protocolrss/core/Rss;
 	public final fun from (Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssReader;)Ldev/patbeagan/protocolrss/core/Rss;
 	public final fun from (Ljava/lang/String;Ldev/patbeagan/protocolrss/util/RssReader;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/protocolrss/core/Rss;
 	public static synthetic fun from$default (Ldev/patbeagan/protocolrss/core/Rss$Companion;Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssReader;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Rss;

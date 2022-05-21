@@ -3,6 +3,7 @@ package dev.patbeagan.protocolrss.core
 import com.fasterxml.jackson.annotation.JsonPropertyOrder
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import dev.patbeagan.protocolrss.util.Const.defaultString
+import java.net.URL
 
 @JsonPropertyOrder(
     "title",
@@ -33,7 +34,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    var link: String = defaultString,
+    var link: URL = URL("https://example.com"),
 
     /**
      * Phrase or sentence describing the channel.

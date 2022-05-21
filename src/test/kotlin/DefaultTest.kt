@@ -13,7 +13,7 @@ class DefaultTest {
             <rss version="2.0.1">
               <channel>
                 <title>UNKNOWN</title>
-                <link>UNKNOWN</link>
+                <link>https://example.com</link>
                 <description>UNKNOWN</description>
               </channel>
             </rss>

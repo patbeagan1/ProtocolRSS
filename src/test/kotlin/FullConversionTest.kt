@@ -76,7 +76,7 @@ internal class FullConversionTest {
         version = "2.0",
         channel = Channel(
             title = "Liftoff News",
-            link = "http://liftoff.msfc.nasa.gov/",
+            link = URL("http://liftoff.msfc.nasa.gov/"),
             description = "Liftoff to Space Exploration.",
             language = "en-us",
             pubDate = "Tue, 10 Jun 2003 04:00:00 GMT",

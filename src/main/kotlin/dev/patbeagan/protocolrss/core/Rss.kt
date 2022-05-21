@@ -5,6 +5,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import dev.patbeagan.protocolrss.util.RssReader
 import dev.patbeagan.protocolrss.util.RssWriter
 import java.io.File
+import java.net.URL
 
 /**
  * https://www.rssboard.org/rss-specification
@@ -46,7 +47,7 @@ data class Rss(
         fun create(
             title: String,
             description: String,
-            link: String,
+            link: URL,
             config: Channel.() -> Unit,
         ): Rss = Rss(
             Channel(

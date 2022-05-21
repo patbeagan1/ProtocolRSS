@@ -18,10 +18,10 @@ class CreatingCompleteObjectTest {
     @Test
     fun `test creating a complete object`() {
         val sub = Rss.create(
-            title = "title", description = "link", link = "description"
+            title = "title", description = "link", link = URL("https://example.com")
         ) {
             title = "Title"
-            link = "Link"
+            link = URL("https://example.com")
             description = "Description"
             category = listOf(
                 Category(
@@ -99,7 +99,7 @@ class CreatingCompleteObjectTest {
             <rss version="2.0.1">
               <channel>
                 <title>Title</title>
-                <link>Link</link>
+                <link>https://example.com</link>
                 <description>Description</description>
                 <language>en-US</language>
                 <pubDate>May 20, 2022</pubDate>
