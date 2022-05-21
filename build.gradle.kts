@@ -42,7 +42,7 @@ java {
  * https://kotlin.github.io/dokka/1.5.30/user_guide/gradle/usage/
  */
 tasks.dokkaHtml {
-    outputDirectory.set(buildDir.resolve("docs"))
+    outputDirectory.set(projectDir.resolve("docs"))
     dokkaSourceSets {
         configureEach {
             reportUndocumented.set(true)
