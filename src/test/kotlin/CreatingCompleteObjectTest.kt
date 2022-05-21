@@ -150,6 +150,6 @@ class CreatingCompleteObjectTest {
               </channel>
             </rss>
 
-            """.trimIndent()
+        """.trimIndent()
     }
 }
