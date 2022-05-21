@@ -1,3 +1,1 @@
-cd ..
-
 ./gradlew ktlintFormat
