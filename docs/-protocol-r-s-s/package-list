@@ -39,7 +39,7 @@ $dokka.location:dev.patbeagan.protocolrss.core/Cloud/port/#/PointingToDeclaratio
 $dokka.location:dev.patbeagan.protocolrss.core/Cloud/protocol/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-cloud/protocol.html
 $dokka.location:dev.patbeagan.protocolrss.core/Cloud/registerProcedure/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-cloud/register-procedure.html
 $dokka.location:dev.patbeagan.protocolrss.core/Enclosure///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-enclosure/index.html
-$dokka.location:dev.patbeagan.protocolrss.core/Enclosure/Enclosure/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-enclosure/-enclosure.html
+$dokka.location:dev.patbeagan.protocolrss.core/Enclosure/Enclosure/#java.net.URL#kotlin.Long#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-enclosure/-enclosure.html
 $dokka.location:dev.patbeagan.protocolrss.core/Enclosure/length/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-enclosure/length.html
 $dokka.location:dev.patbeagan.protocolrss.core/Enclosure/type/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-enclosure/type.html
 $dokka.location:dev.patbeagan.protocolrss.core/Enclosure/url/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-enclosure/url.html
@@ -56,7 +56,7 @@ $dokka.location:dev.patbeagan.protocolrss.core/Image/title/#/PointingToDeclarati
 $dokka.location:dev.patbeagan.protocolrss.core/Image/url/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-image/url.html
 $dokka.location:dev.patbeagan.protocolrss.core/Image/width/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-image/width.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/index.html
-$dokka.location:dev.patbeagan.protocolrss.core/Item/Item/#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.collections.List[dev.patbeagan.protocolrss.core.Category]?#kotlin.String?#dev.patbeagan.protocolrss.core.Enclosure?#dev.patbeagan.protocolrss.core.Guid?#kotlin.String?#kotlin.String?#dev.patbeagan.protocolrss.core.Source?/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/-item.html
+$dokka.location:dev.patbeagan.protocolrss.core/Item/Item/#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.collections.List[dev.patbeagan.protocolrss.core.Category]?#kotlin.String?#dev.patbeagan.protocolrss.core.Enclosure?#dev.patbeagan.protocolrss.core.Guid?#java.net.URL?#kotlin.String?#dev.patbeagan.protocolrss.core.Source?/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/-item.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/author/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/author.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/category/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/category.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/comments/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/comments.html
@@ -84,7 +84,7 @@ $dokka.location:dev.patbeagan.protocolrss.core/SkipHours///PointingToDeclaration
 $dokka.location:dev.patbeagan.protocolrss.core/SkipHours/SkipHours/#kotlin.collections.List[kotlin.Int]/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-skip-hours/-skip-hours.html
 $dokka.location:dev.patbeagan.protocolrss.core/SkipHours/hour/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-skip-hours/hour.html
 $dokka.location:dev.patbeagan.protocolrss.core/Source///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-source/index.html
-$dokka.location:dev.patbeagan.protocolrss.core/Source/Source/#kotlin.String#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-source/-source.html
+$dokka.location:dev.patbeagan.protocolrss.core/Source/Source/#java.net.URL#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-source/-source.html
 $dokka.location:dev.patbeagan.protocolrss.core/Source/source/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-source/source.html
 $dokka.location:dev.patbeagan.protocolrss.core/Source/url/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-source/url.html
 $dokka.location:dev.patbeagan.protocolrss.core/TextInput///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-text-input/index.html
