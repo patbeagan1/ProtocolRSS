@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    def versionProtocolRss = "0.3-SNAPSHOT"
+    def versionProtocolRss = "0.4-SNAPSHOT"
     implementation("dev.patbeagan1:protocol-rss:$versionProtocolRss")
 }
 ```
