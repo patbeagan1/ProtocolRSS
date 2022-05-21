@@ -118,7 +118,7 @@ internal class FullConversionTest {
 
     @Test
     fun `test conversion to xml`() {
-        assertEquals(xml, writer.convertToXML(kotlin))
+        assertEquals(xml, writer.serialize(kotlin).value)
     }
 
     @Test

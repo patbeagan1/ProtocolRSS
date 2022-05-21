@@ -85,7 +85,7 @@ internal class FileWriterTest {
                 pubDate = "123"
             )
         )
-        rssWriter.writeToFile(data, File("out-feed.xml"))
-        println(rssWriter.convertToXML(data))
+        rssWriter.serialize(data).writeToFile(File("out-feed.xml"))
+        println(rssWriter.serialize(data))
     }
 }

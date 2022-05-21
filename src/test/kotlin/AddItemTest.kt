@@ -19,7 +19,7 @@ class AddItemTest {
                 Item(title = "title", description = "desc")
             )
         }.let {
-            rssWriter.convertToXML(it)
+            rssWriter.serialize(it).value
         }
         assertEquals(SampleWithOneItem, actual)
     }
@@ -28,7 +28,7 @@ class AddItemTest {
     fun `test add item works as expected when converting back to xml`() {
         val actual = Rss.from(SampleWithoutAnyItems) {
             addItem(Item(title = "title", description = "desc"))
-        }?.toXML()
+        }?.toXML()?.value
 
         assertEquals(SampleWithOneItem, actual)
     }

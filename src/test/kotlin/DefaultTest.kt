@@ -19,7 +19,7 @@ class DefaultTest {
             </rss>
             
         """.trimIndent()
-        val actual = rssWriter.convertToXML(Rss())
+        val actual = rssWriter.serialize(Rss()).value
         assertEquals(expected, actual)
     }
 }

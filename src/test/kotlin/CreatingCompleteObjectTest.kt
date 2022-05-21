@@ -88,7 +88,7 @@ class CreatingCompleteObjectTest {
             )
             ttl = 100
             webMaster = "Pat"
-        }.toXML()
+        }.toXML().value
 
         assertEquals(CompleteRSSSpecXML, sub)
     }
