@@ -6,7 +6,7 @@ $dokka.location:dev.patbeagan.protocolrss.core/Category/Category/#kotlin.String#
 $dokka.location:dev.patbeagan.protocolrss.core/Category/category/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-category/category.html
 $dokka.location:dev.patbeagan.protocolrss.core/Category/domain/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-category/domain.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/index.html
-$dokka.location:dev.patbeagan.protocolrss.core/Channel/Channel/#kotlin.String#kotlin.String#kotlin.String#kotlin.collections.List[dev.patbeagan.protocolrss.core.Category]?#dev.patbeagan.protocolrss.core.Cloud?#kotlin.String?#kotlin.String?#kotlin.String?#dev.patbeagan.protocolrss.core.Image?#kotlin.collections.List[dev.patbeagan.protocolrss.core.Item]?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#dev.patbeagan.protocolrss.core.SkipDays?#dev.patbeagan.protocolrss.core.SkipHours?#dev.patbeagan.protocolrss.core.TextInput?#kotlin.Int?#kotlin.String?/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/-channel.html
+$dokka.location:dev.patbeagan.protocolrss.core/Channel/Channel/#kotlin.String#java.net.URL#kotlin.String#kotlin.collections.List[dev.patbeagan.protocolrss.core.Category]?#dev.patbeagan.protocolrss.core.Cloud?#kotlin.String?#kotlin.String?#kotlin.String?#dev.patbeagan.protocolrss.core.Image?#kotlin.collections.List[dev.patbeagan.protocolrss.core.Item]?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#dev.patbeagan.protocolrss.core.SkipDays?#dev.patbeagan.protocolrss.core.SkipHours?#dev.patbeagan.protocolrss.core.TextInput?#kotlin.Int?#kotlin.String?/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/-channel.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/category/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/category.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/cloud/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/cloud.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/copyright/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/copyright.html
@@ -68,15 +68,16 @@ $dokka.location:dev.patbeagan.protocolrss.core/Item/pubDate/#/PointingToDeclarat
 $dokka.location:dev.patbeagan.protocolrss.core/Item/source/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/source.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/title/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/title.html
 $dokka.location:dev.patbeagan.protocolrss.core/Rss.Companion///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/-companion/index.html
-$dokka.location:dev.patbeagan.protocolrss.core/Rss.Companion/create/#kotlin.String#kotlin.String#kotlin.String#kotlin.Function1[dev.patbeagan.protocolrss.core.Channel,kotlin.Unit]/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/-companion/create.html
-$dokka.location:dev.patbeagan.protocolrss.core/Rss.Companion/from/#java.io.File#dev.patbeagan.protocolrss.util.RssReader/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/-companion/from.html
+$dokka.location:dev.patbeagan.protocolrss.core/Rss.Companion/create/#kotlin.String#kotlin.String#java.net.URL#kotlin.Function1[dev.patbeagan.protocolrss.core.Channel,kotlin.Unit]/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/-companion/create.html
+$dokka.location:dev.patbeagan.protocolrss.core/Rss.Companion/from/#java.io.File#dev.patbeagan.protocolrss.util.RssFileReader#kotlin.Function1[dev.patbeagan.protocolrss.core.Rss,kotlin.Unit]/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/-companion/from.html
 $dokka.location:dev.patbeagan.protocolrss.core/Rss.Companion/from/#kotlin.String#dev.patbeagan.protocolrss.util.RssReader#kotlin.Function1[dev.patbeagan.protocolrss.core.Rss,kotlin.Unit]/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/-companion/from.html
 $dokka.location:dev.patbeagan.protocolrss.core/Rss///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/index.html
 $dokka.location:dev.patbeagan.protocolrss.core/Rss/Rss/#dev.patbeagan.protocolrss.core.Channel#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/-rss.html
 $dokka.location:dev.patbeagan.protocolrss.core/Rss/addItem/#dev.patbeagan.protocolrss.core.Item/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/add-item.html
 $dokka.location:dev.patbeagan.protocolrss.core/Rss/channel/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/channel.html
-$dokka.location:dev.patbeagan.protocolrss.core/Rss/toXML/#dev.patbeagan.protocolrss.util.RssWriter/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/to-x-m-l.html
+$dokka.location:dev.patbeagan.protocolrss.core/Rss/serializeToXML/#dev.patbeagan.protocolrss.util.RssWriter/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/serialize-to-x-m-l.html
 $dokka.location:dev.patbeagan.protocolrss.core/Rss/version/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/version.html
+$dokka.location:dev.patbeagan.protocolrss.core/Rss/writeToFile/#java.io.File#dev.patbeagan.protocolrss.util.RssWriter/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-rss/write-to-file.html
 $dokka.location:dev.patbeagan.protocolrss.core/SkipDays///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-skip-days/index.html
 $dokka.location:dev.patbeagan.protocolrss.core/SkipDays/SkipDays/#kotlin.collections.List[kotlin.Int]/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-skip-days/-skip-days.html
 $dokka.location:dev.patbeagan.protocolrss.core/SkipDays/day/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-skip-days/day.html
@@ -93,18 +94,32 @@ $dokka.location:dev.patbeagan.protocolrss.core/TextInput/description/#/PointingT
 $dokka.location:dev.patbeagan.protocolrss.core/TextInput/link/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-text-input/link.html
 $dokka.location:dev.patbeagan.protocolrss.core/TextInput/name/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-text-input/name.html
 $dokka.location:dev.patbeagan.protocolrss.core/TextInput/title/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-text-input/title.html
+$dokka.location:dev.patbeagan.protocolrss.util.base////PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util.base/index.html
+$dokka.location:dev.patbeagan.protocolrss.util.base/RssDeserializer///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util.base/-rss-deserializer/index.html
+$dokka.location:dev.patbeagan.protocolrss.util.base/RssDeserializer/deserialize/#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util.base/-rss-deserializer/deserialize.html
+$dokka.location:dev.patbeagan.protocolrss.util.base/RssDeserializer/deserializeOrNull/#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util.base/-rss-deserializer/deserialize-or-null.html
+$dokka.location:dev.patbeagan.protocolrss.util.base/RssSerializer///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util.base/-rss-serializer/index.html
+$dokka.location:dev.patbeagan.protocolrss.util.base/RssSerializer/serialize/#dev.patbeagan.protocolrss.core.Rss/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util.base/-rss-serializer/serialize.html
 $dokka.location:dev.patbeagan.protocolrss.util////PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/index.html
 $dokka.location:dev.patbeagan.protocolrss.util/Const///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-const/index.html
-$dokka.location:dev.patbeagan.protocolrss.util/Const/defaultString/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-const/default-string.html
+$dokka.location:dev.patbeagan.protocolrss.util/Const/DefaultString/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-const/-default-string.html
+$dokka.location:dev.patbeagan.protocolrss.util/Const/DefaultXMLMapper/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-const/-default-x-m-l-mapper.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssFileReader///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-file-reader/index.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssFileReader/RssFileReader/#dev.patbeagan.protocolrss.util.RssReader/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-file-reader/-rss-file-reader.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssFileReader/readFromFile/#java.io.File/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-file-reader/read-from-file.html
 $dokka.location:dev.patbeagan.protocolrss.util/RssReader///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-reader/index.html
 $dokka.location:dev.patbeagan.protocolrss.util/RssReader/RssReader/#com.fasterxml.jackson.dataformat.xml.XmlMapper/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-reader/-rss-reader.html
-$dokka.location:dev.patbeagan.protocolrss.util/RssReader/convertToRSS/#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-reader/convert-to-r-s-s.html
-$dokka.location:dev.patbeagan.protocolrss.util/RssReader/readFromFile/#java.io.File/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-reader/read-from-file.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssReader/deserialize/#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-reader/deserialize.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssReader/deserializeOrNull/#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-reader/deserialize-or-null.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssString///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-string/index.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssString/RssString/#kotlin.String/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-string/-rss-string.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssString/value/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-string/value.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssString/writeToFile/#java.io.File/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-string/write-to-file.html
 $dokka.location:dev.patbeagan.protocolrss.util/RssWriter.Companion///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-writer/-companion/index.html
 $dokka.location:dev.patbeagan.protocolrss.util/RssWriter///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-writer/index.html
 $dokka.location:dev.patbeagan.protocolrss.util/RssWriter/RssWriter/#com.fasterxml.jackson.dataformat.xml.XmlMapper/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-writer/-rss-writer.html
-$dokka.location:dev.patbeagan.protocolrss.util/RssWriter/convertToXML/#dev.patbeagan.protocolrss.core.Rss/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-writer/convert-to-x-m-l.html
-$dokka.location:dev.patbeagan.protocolrss.util/RssWriter/writeToFile/#dev.patbeagan.protocolrss.core.Rss#java.io.File/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-writer/write-to-file.html
+$dokka.location:dev.patbeagan.protocolrss.util/RssWriter/serialize/#dev.patbeagan.protocolrss.core.Rss/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.util/-rss-writer/serialize.html
 dev.patbeagan.protocolrss.core
 dev.patbeagan.protocolrss.util
+dev.patbeagan.protocolrss.util.base
 

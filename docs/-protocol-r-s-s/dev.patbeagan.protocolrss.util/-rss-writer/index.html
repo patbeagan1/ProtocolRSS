@@ -31,7 +31,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-0.3-SNAPSHOT    </div>
+0.4-SNAPSHOT    </div>
     <div class="pull-right d-flex">
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
@@ -46,13 +46,7 @@ if(savedDarkMode === true){
   <div class="breadcrumbs"><a href="../../../index.html">ProtocolRSS</a><span class="delimiter">/</span><a href="../index.html">dev.patbeagan.protocolrss.util</a><span class="delimiter">/</span><a href="index.html">RssWriter</a></div>
   <div class="cover ">
     <h1 class="cover"><span>Rss</span><wbr></wbr><span><span>Writer</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">RssWriter</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">xmlMapper<span class="token operator">: </span><span data-unresolved-link="com.fasterxml.jackson.dataformat.xml/XmlMapper///PointingToDeclaration/">XmlMapper</span><span class="token operator"> = </span>XmlMapper(
-        JacksonXmlModule().apply { setDefaultUseWrapper(false) }
-    ).apply {
-        enable(SerializationFeature.INDENT_OUTPUT)
-        enable(SerializationFeature.FAIL_ON_SELF_REFERENCES)
-        setSerializationInclusion(JsonInclude.Include.NON_NULL)
-    }</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">RssWriter</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">xmlMapper<span class="token operator">: </span><span data-unresolved-link="com.fasterxml.jackson.dataformat.xml/XmlMapper///PointingToDeclaration/">XmlMapper</span><span class="token operator"> = </span>DefaultXMLMapper</span></span><span class="token punctuation">)</span> : <a href="../../dev.patbeagan.protocolrss.util.base/-rss-serializer/index.html">RssSerializer</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
@@ -68,13 +62,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-rss-writer.html"><span class="token function">RssWriter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">xmlMapper<span class="token operator">: </span><span data-unresolved-link="com.fasterxml.jackson.dataformat.xml/XmlMapper///PointingToDeclaration/">XmlMapper</span><span class="token operator"> = </span>XmlMapper(
-        JacksonXmlModule().apply { setDefaultUseWrapper(false) }
-    ).apply {
-        enable(SerializationFeature.INDENT_OUTPUT)
-        enable(SerializationFeature.FAIL_ON_SELF_REFERENCES)
-        setSerializationInclusion(JsonInclude.Include.NON_NULL)
-    }</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-rss-writer.html"><span class="token function">RssWriter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">xmlMapper<span class="token operator">: </span><span data-unresolved-link="com.fasterxml.jackson.dataformat.xml/XmlMapper///PointingToDeclaration/">XmlMapper</span><span class="token operator"> = </span>DefaultXMLMapper</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
               </div>
             </div>
           </div>
@@ -98,43 +86,28 @@ if(savedDarkMode === true){
         </div>
       </div>
       <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="-182682278%2FFunctions%2F769193423" anchor-label="convertToXML" id="-182682278%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+      <div class="table" data-togglable="Functions"><a data-name="1430743757%2FFunctions%2F769193423" anchor-label="serialize" id="1430743757%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
         <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
           <div class="main-subrow keyValue ">
             <div class=""><span class="inline-flex">
-                <div><a href="convert-to-x-m-l.html"><span>convert</span><wbr></wbr><span>To</span><wbr></wbr><span><span>XML</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-182682278%2FFunctions%2F769193423"></span>
+                <div><a href="serialize.html"><span><span>serialize</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1430743757%2FFunctions%2F769193423"></span>
                   <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="convert-to-x-m-l.html"><span class="token function">convertToXML</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../../dev.patbeagan.protocolrss.core/-rss/index.html">Rss</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1041638128%2FFunctions%2F769193423" anchor-label="writeToFile" id="1041638128%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="write-to-file.html"><span>write</span><wbr></wbr><span>To</span><wbr></wbr><span><span>File</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1041638128%2FFunctions%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="write-to-file.html"><span class="token function">writeToFile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../../dev.patbeagan.protocolrss.core/-rss/index.html">Rss</a><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html">File</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="serialize.html"><span class="token function">serialize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../../dev.patbeagan.protocolrss.core/-rss/index.html">Rss</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-rss-string/index.html">RssString</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <h2 class="">Sources</h2>
-      <div class="table" data-togglable="Sources"><a data-name="-394016009%2FSource%2F769193423" anchor-label="https://github.com/patbeagan1/ProtocolRSS/blob/master/src/main/kotlin/dev/patbeagan/protocolrss/util/RssWriter.kt#L12" id="-394016009%2FSource%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+      <div class="table" data-togglable="Sources"><a data-name="-394016009%2FSource%2F769193423" anchor-label="https://github.com/patbeagan1/ProtocolRSS/blob/master/src/main/kotlin/dev/patbeagan/protocolrss/util/RssWriter.kt#L8" id="-394016009%2FSource%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
         <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
           <div class="main-subrow keyValue ">
             <div class=""><span class="inline-flex">
-                <div><a href="https://github.com/patbeagan1/ProtocolRSS/blob/master/src/main/kotlin/dev/patbeagan/protocolrss/util/RssWriter.kt#L12">jvm source</a></div>
+                <div><a href="https://github.com/patbeagan1/ProtocolRSS/blob/master/src/main/kotlin/dev/patbeagan/protocolrss/util/RssWriter.kt#L8">jvm source</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-394016009%2FSource%2F769193423"></span>
                   <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                 </span></span></div>
