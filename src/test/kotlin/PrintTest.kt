@@ -1,6 +1,5 @@
-import org.junit.jupiter.api.Test
 import dev.patbeagan.rss.Category
-import rss.Channel
+import dev.patbeagan.rss.Channel
 import dev.patbeagan.rss.Cloud
 import dev.patbeagan.rss.Enclosure
 import dev.patbeagan.rss.Guid
@@ -10,6 +9,7 @@ import dev.patbeagan.rss.Rss
 import dev.patbeagan.rss.RssWriter
 import dev.patbeagan.rss.SkipDays
 import dev.patbeagan.rss.Source
+import org.junit.jupiter.api.Test
 import java.io.File
 import java.time.Instant
 

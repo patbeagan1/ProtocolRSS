@@ -1,5 +1,5 @@
-import org.junit.jupiter.api.Test
 import dev.patbeagan.rss.Rss
+import org.junit.jupiter.api.Test
 
 class CreatingComplexObjectTest {
 

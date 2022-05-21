@@ -2,13 +2,13 @@ import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
-import org.junit.jupiter.api.Test
-import rss.Channel
+import dev.patbeagan.rss.Channel
 import dev.patbeagan.rss.Guid
 import dev.patbeagan.rss.Item
 import dev.patbeagan.rss.Rss
 import dev.patbeagan.rss.RssReader
 import dev.patbeagan.rss.RssWriter
+import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 internal class FullConversionTest {

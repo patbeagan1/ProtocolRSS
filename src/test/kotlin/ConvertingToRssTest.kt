@@ -1,7 +1,7 @@
-import org.junit.jupiter.api.Test
 import dev.patbeagan.rss.Item
 import dev.patbeagan.rss.Rss
 import dev.patbeagan.rss.RssReader
+import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 
