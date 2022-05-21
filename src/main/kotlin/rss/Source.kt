@@ -21,11 +21,11 @@ data class Source(
      */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val url: String,
+    var url: String,
     /**
      * The name of the source that this item comes from.
      */
     @JvmField
     @field:JacksonXmlText
-    val source: String,
+    var source: String,
 )

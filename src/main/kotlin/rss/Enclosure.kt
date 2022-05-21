@@ -17,13 +17,13 @@ data class Enclosure(
 
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val url: String,
+    var url: String,
 
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val length: String,
+    var length: String,
 
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val type: String,
+    var type: String,
 )

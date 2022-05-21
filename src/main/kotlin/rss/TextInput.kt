@@ -1,5 +1,7 @@
 package rss
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+
 /**
  * A channel may optionally contain a <textInput> sub-element,
  * which contains four required sub-elements.
@@ -13,17 +15,25 @@ data class TextInput(
     /**
      *  `<description>` -- Explains the text input area.
      */
-    val description: String,
+    @JvmField
+    @field:JacksonXmlProperty
+    var description: String,
     /**
      *  `<link>` -- The URL of the CGI script that processes text input requests.
      */
-    val link: String,
+    @JvmField
+    @field:JacksonXmlProperty
+    var link: String,
     /**
      *  `<name>` -- The name of the text object in the text input area.
      */
-    val name: String,
+    @JvmField
+    @field:JacksonXmlProperty
+    var name: String,
     /**
      *  `<title>` -- The label of the Submit button in the text input area.
      */
-    val title: String,
+    @JvmField
+    @field:JacksonXmlProperty
+    var title: String,
 )

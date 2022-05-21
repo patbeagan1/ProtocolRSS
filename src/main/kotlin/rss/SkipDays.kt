@@ -1,5 +1,7 @@
 package rss
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+
 /**
  * A hint for aggregators telling them which days they can skip.
  * This element contains up to seven <day> sub-elements whose value is
@@ -8,5 +10,7 @@ package rss
  *
  */
 data class SkipDays(
+    @JvmField
+    @field:JacksonXmlProperty
     val day: List<Int>
 )

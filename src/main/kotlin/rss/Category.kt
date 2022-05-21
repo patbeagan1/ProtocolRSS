@@ -33,5 +33,5 @@ data class Category(
      */
     @JvmField
     @field: JacksonXmlProperty(isAttribute = true)
-    val domain: String? = null,
+    var domain: String? = null,
 )

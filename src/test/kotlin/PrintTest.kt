@@ -1,4 +1,3 @@
-
 import org.junit.jupiter.api.Test
 import rss.Category
 import rss.Channel
@@ -14,8 +13,8 @@ import rss.Source
 import java.io.File
 import java.time.Instant
 
-internal class MainKtTest {
-    val rssWriter = RssWriter()
+internal class PrintTest {
+    private val rssWriter = RssWriter()
 
     @Test
     fun `test basic functionality`() {

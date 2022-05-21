@@ -12,11 +12,11 @@ data class Rss(
 
     @JvmField
     @field:JacksonXmlProperty
-    val channel: Channel = Channel(),
+    var channel: Channel = Channel(),
 
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val version: String = "2.0.1"
+    var version: String = "2.0.1",
 ) {
     fun addItem(item: Item) {
         val itemList = this.channel.item
@@ -30,12 +30,28 @@ data class Rss(
     fun toXML(rssWriter: RssWriter = RssWriter()) = rssWriter.convertToXML(this)
 
     companion object {
-        fun from(file: File, rssReader: RssReader = RssReader()): Rss? {
-            return rssReader.readFromFile(file)
-        }
+        fun from(
+            file: File,
+            rssReader: RssReader = RssReader(),
+        ): Rss? = rssReader.readFromFile(file)
 
-        fun from(input: String, rssReader: RssReader = RssReader()): Rss? {
-            return rssReader.convertToRSS(input)
-        }
+        fun from(
+            input: String,
+            rssReader: RssReader = RssReader(),
+            config: Rss.() -> Unit = {},
+        ): Rss? = rssReader.convertToRSS(input)?.apply { config(this) }
+
+        fun create(
+            title: String,
+            description: String,
+            link: String,
+            config: Channel.() -> Unit,
+        ): Rss = Rss(
+            Channel(
+                title = title,
+                link = link,
+                description = description
+            ).apply(config)
+        )
     }
 }

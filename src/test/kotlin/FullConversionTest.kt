@@ -11,7 +11,7 @@ import rss.RssReader
 import rss.RssWriter
 import kotlin.test.assertEquals
 
-internal class ConversionTest {
+internal class FullConversionTest {
 
     private val xmlMapper = XmlMapper(
         JacksonXmlModule().apply { setDefaultUseWrapper(false) }

@@ -25,14 +25,14 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val title: String? = null,
+    var title: String? = null,
 
     /**
      * The item synopsis.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val description: String? = null,
+    var description: String? = null,
 
     /**
      * Email address of the author of the item.
@@ -52,7 +52,7 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val author: String? = null,
+    var author: String? = null,
 
     /**
      * Includes the item in one or more categories.
@@ -60,7 +60,7 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val category: List<Category>? = null,
+    var category: List<Category>? = null,
 
     /**
      * URL of a page for comments relating to the item.
@@ -76,7 +76,7 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val comments: String? = null,
+    var comments: String? = null,
 
     /**
      * Describes a media object that is attached to the item.
@@ -84,7 +84,7 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val enclosure: Enclosure? = null,
+    var enclosure: Enclosure? = null,
 
     /**
      * A string that uniquely identifies the item.
@@ -92,14 +92,14 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val guid: Guid? = null,
+    var guid: Guid? = null,
 
     /**
      * The URL of the item.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val link: String? = null,
+    var link: String? = null,
 
     /**
      * Indicates when the item was published.
@@ -114,7 +114,7 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val pubDate: String? = null,
+    var pubDate: String? = null,
 
     /**
      * The RSS channel that the item came from.
@@ -122,5 +122,5 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val source: Source? = null,
+    var source: Source? = null,
 )

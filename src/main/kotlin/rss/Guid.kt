@@ -36,5 +36,5 @@ data class Guid(
      */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val isPermlink: Boolean? = null
+    var isPermlink: Boolean? = null
 )

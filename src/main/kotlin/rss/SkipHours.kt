@@ -1,5 +1,7 @@
 package rss
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+
 /**
  * A hint for aggregators telling them which hours they can skip.
  * This element contains up to 24 <hour> sub-elements whose value is a number between 0 and 23,
@@ -9,5 +11,7 @@ package rss
  * The hour beginning at midnight is hour zero.
  */
 data class SkipHours(
-    val hour: List<Int>
+    @JvmField
+    @field:JacksonXmlProperty
+    val hour: List<Int>,
 )

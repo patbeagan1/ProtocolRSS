@@ -26,21 +26,21 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val title: String = defaultString,
+    var title: String = defaultString,
 
     /**
      * The URL to the HTML website corresponding to the channel.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val link: String = defaultString,
+    var link: String = defaultString,
 
     /**
      * Phrase or sentence describing the channel.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val description: String = defaultString,
+    var description: String = defaultString,
 
     /**
      * Specify one or more categories that the channel belongs to.
@@ -49,7 +49,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val category: List<Category>? = null,
+    var category: List<Category>? = null,
 
     /**
      * Allows processes to register with a cloud to be notified of updates to the channel,
@@ -58,14 +58,14 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val cloud: Cloud? = null,
+    var cloud: Cloud? = null,
 
     /**
      * Copyright notice for content in the channel.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val copyright: String? = null,
+    var copyright: String? = null,
 
     /**
      * A URL that points to the [documentation](https://www.rssboard.org/rss-specification) for the format used in the RSS file.
@@ -74,14 +74,14 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val docs: String? = null,
+    var docs: String? = null,
 
     /**
      * A string indicating the program used to generate the channel.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val generator: String? = null,
+    var generator: String? = null,
 
     /**
      * Specifies a GIF, JPEG or PNG image that can be displayed with the channel.
@@ -89,7 +89,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val image: Image? = null,
+    var image: Image? = null,
 
     @JvmField
     @field:JacksonXmlProperty
@@ -103,21 +103,21 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val language: String? = null,
+    var language: String? = null,
 
     /**
      * The last time the content of the channel changed.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val lastBuildDate: String? = null,
+    var lastBuildDate: String? = null,
 
     /**
      * Email address for person responsible for editorial content.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val managingEditor: String? = null,
+    var managingEditor: String? = null,
 
     /**
      * The publication date for the content in the channel.
@@ -129,14 +129,14 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val pubDate: String? = null,
+    var pubDate: String? = null,
 
     /**
      * The [PICS](http://www.w3.org/PICS/) rating for the channel.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val rating: String? = null,
+    var rating: String? = null,
 
     /**
      * A hint for aggregators telling them which days they can skip.
@@ -145,7 +145,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val skipDays: SkipDays? = null,
+    var skipDays: SkipDays? = null,
 
     /**
      * A hint for aggregators telling them which hours they can skip.
@@ -154,7 +154,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val skipHours: SkipHours? = null,
+    var skipHours: SkipHours? = null,
 
     /**
      * Specifies a text input box that can be displayed with the channel.
@@ -162,7 +162,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val textInput: TextInput? = null,
+    var textInput: TextInput? = null,
 
     /**
      * ttl stands for time to live.
@@ -171,12 +171,12 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val ttl: String? = null,
+    var ttl: String? = null,
 
     /**
      * Email address for person responsible for technical issues relating to channel.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val webMaster: String? = null,
+    var webMaster: String? = null,
 )

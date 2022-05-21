@@ -29,33 +29,33 @@ data class Cloud(
      */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val domain: String,
+    var domain: String,
 
     /**
      * The client's TCP port
      */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val port: Int,
+    var port: Int,
 
     /**
      * The client's remote procedure call path
      */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val path: String,
+    var path: String,
 
     /**
      * The name of the remote procedure the cloud should call on the client upon an update
      */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val registerProcedure: String,
+    var registerProcedure: String,
 
     /**
      * The string "xml-rpc" if the client employs XML-RPC, "soap" for SOAP and "http-post" for REST.
      */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    val protocol: String,
+    var protocol: String,
 )

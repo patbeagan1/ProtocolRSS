@@ -20,28 +20,28 @@ data class Image(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val link: String,
+    var link: String,
 
     /**
      * `<title>` describes the image, it's used in the ALT attribute of the HTML `<img>` tag when the channel is rendered in HTML.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val title: String,
+    var title: String,
 
     /**
      * `<url>` is the URL of a GIF, JPEG or PNG image that represents the channel.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val url: String,
+    var url: String,
 
     /**
      * `<description>` contains text that is included in the TITLE attribute of the link formed around the image in the HTML rendering.
      */
     @JvmField
     @field:JacksonXmlProperty
-    val description: String? = null,
+    var description: String? = null,
 
     /**
      * `<width>` indicates the width of the image in pixels.
@@ -49,7 +49,7 @@ data class Image(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val width: Int? = null,
+    var width: Int? = null,
 
     /**
      * `<height>` indicates the height of the image in pixels.
@@ -57,5 +57,5 @@ data class Image(
      */
     @JvmField
     @field:JacksonXmlProperty
-    val height: Int? = null,
+    var height: Int? = null,
 )
