@@ -1,8 +1,8 @@
-package dev.patbeagan.rss
+package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
-import dev.patbeagan.rss.Const.defaultString
+import dev.patbeagan.protocolrss.util.Const.defaultString
 
 @JsonPropertyOrder(
     "title",

@@ -1,25 +1,25 @@
-public final class dev/patbeagan/rss/Category {
+public final class dev/patbeagan/protocolrss/core/Category {
 	public field category Ljava/lang/String;
 	public field domain Ljava/lang/String;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
 	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/rss/Category;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Category;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/rss/Category;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Category;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Category;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Category;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Channel {
+public final class dev/patbeagan/protocolrss/core/Channel {
 	public field category Ljava/util/List;
-	public field cloud Ldev/patbeagan/rss/Cloud;
+	public field cloud Ldev/patbeagan/protocolrss/core/Cloud;
 	public field copyright Ljava/lang/String;
 	public field description Ljava/lang/String;
 	public field docs Ljava/lang/String;
 	public field generator Ljava/lang/String;
-	public field image Ldev/patbeagan/rss/Image;
+	public field image Ldev/patbeagan/protocolrss/core/Image;
 	public field item Ljava/util/List;
 	public field language Ljava/lang/String;
 	public field lastBuildDate Ljava/lang/String;
@@ -27,15 +27,15 @@ public final class dev/patbeagan/rss/Channel {
 	public field managingEditor Ljava/lang/String;
 	public field pubDate Ljava/lang/String;
 	public field rating Ljava/lang/String;
-	public field skipDays Ldev/patbeagan/rss/SkipDays;
-	public field skipHours Ldev/patbeagan/rss/SkipHours;
-	public field textInput Ldev/patbeagan/rss/TextInput;
+	public field skipDays Ldev/patbeagan/protocolrss/core/SkipDays;
+	public field skipHours Ldev/patbeagan/protocolrss/core/SkipHours;
+	public field textInput Ldev/patbeagan/protocolrss/core/TextInput;
 	public field title Ljava/lang/String;
 	public field ttl Ljava/lang/String;
 	public field webMaster Ljava/lang/String;
 	public fun <init> ()V
-	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/rss/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/SkipDays;Ldev/patbeagan/rss/SkipHours;Ldev/patbeagan/rss/TextInput;Ljava/lang/String;Ljava/lang/String;)V
-	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/rss/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/SkipDays;Ldev/patbeagan/rss/SkipHours;Ldev/patbeagan/rss/TextInput;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component10 ()Ljava/util/List;
 	public final fun component11 ()Ljava/lang/String;
@@ -43,27 +43,27 @@ public final class dev/patbeagan/rss/Channel {
 	public final fun component13 ()Ljava/lang/String;
 	public final fun component14 ()Ljava/lang/String;
 	public final fun component15 ()Ljava/lang/String;
-	public final fun component16 ()Ldev/patbeagan/rss/SkipDays;
-	public final fun component17 ()Ldev/patbeagan/rss/SkipHours;
-	public final fun component18 ()Ldev/patbeagan/rss/TextInput;
+	public final fun component16 ()Ldev/patbeagan/protocolrss/core/SkipDays;
+	public final fun component17 ()Ldev/patbeagan/protocolrss/core/SkipHours;
+	public final fun component18 ()Ldev/patbeagan/protocolrss/core/TextInput;
 	public final fun component19 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component20 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/util/List;
-	public final fun component5 ()Ldev/patbeagan/rss/Cloud;
+	public final fun component5 ()Ldev/patbeagan/protocolrss/core/Cloud;
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/lang/String;
-	public final fun component9 ()Ldev/patbeagan/rss/Image;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/rss/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/SkipDays;Ldev/patbeagan/rss/SkipHours;Ldev/patbeagan/rss/TextInput;Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/rss/Channel;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Channel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/rss/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/SkipDays;Ldev/patbeagan/rss/SkipHours;Ldev/patbeagan/rss/TextInput;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/rss/Channel;
+	public final fun component9 ()Ldev/patbeagan/protocolrss/core/Image;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Channel;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Channel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Image;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/SkipDays;Ldev/patbeagan/protocolrss/core/SkipHours;Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Channel;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Cloud {
+public final class dev/patbeagan/protocolrss/core/Cloud {
 	public field domain Ljava/lang/String;
 	public field path Ljava/lang/String;
 	public field port I
@@ -75,19 +75,14 @@ public final class dev/patbeagan/rss/Cloud {
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/rss/Cloud;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Cloud;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/rss/Cloud;
+	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Cloud;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Cloud;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Cloud;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Const {
-	public static final field INSTANCE Ldev/patbeagan/rss/Const;
-	public static final field defaultString Ljava/lang/String;
-}
-
-public final class dev/patbeagan/rss/Enclosure {
+public final class dev/patbeagan/protocolrss/core/Enclosure {
 	public field length Ljava/lang/String;
 	public field type Ljava/lang/String;
 	public field url Ljava/lang/String;
@@ -95,14 +90,14 @@ public final class dev/patbeagan/rss/Enclosure {
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/rss/Enclosure;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Enclosure;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/rss/Enclosure;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Enclosure;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Enclosure;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Enclosure;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Guid {
+public final class dev/patbeagan/protocolrss/core/Guid {
 	public field guid Ljava/lang/String;
 	public field isPermlink Ljava/lang/Boolean;
 	public fun <init> ()V
@@ -110,14 +105,14 @@ public final class dev/patbeagan/rss/Guid {
 	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/Boolean;
-	public final fun copy (Ljava/lang/String;Ljava/lang/Boolean;)Ldev/patbeagan/rss/Guid;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Guid;Ljava/lang/String;Ljava/lang/Boolean;ILjava/lang/Object;)Ldev/patbeagan/rss/Guid;
+	public final fun copy (Ljava/lang/String;Ljava/lang/Boolean;)Ldev/patbeagan/protocolrss/core/Guid;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Guid;Ljava/lang/String;Ljava/lang/Boolean;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Guid;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Image {
+public final class dev/patbeagan/protocolrss/core/Image {
 	public field description Ljava/lang/String;
 	public field height Ljava/lang/Integer;
 	public field link Ljava/lang/String;
@@ -132,127 +127,107 @@ public final class dev/patbeagan/rss/Image {
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/Integer;
 	public final fun component6 ()Ljava/lang/Integer;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Ldev/patbeagan/rss/Image;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Image;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Object;)Ldev/patbeagan/rss/Image;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Ldev/patbeagan/protocolrss/core/Image;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Image;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Image;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Item {
+public final class dev/patbeagan/protocolrss/core/Item {
 	public field author Ljava/lang/String;
 	public field category Ljava/util/List;
 	public field comments Ljava/lang/String;
 	public field description Ljava/lang/String;
-	public field enclosure Ldev/patbeagan/rss/Enclosure;
-	public field guid Ldev/patbeagan/rss/Guid;
+	public field enclosure Ldev/patbeagan/protocolrss/core/Enclosure;
+	public field guid Ldev/patbeagan/protocolrss/core/Guid;
 	public field link Ljava/lang/String;
 	public field pubDate Ljava/lang/String;
-	public field source Ldev/patbeagan/rss/Source;
+	public field source Ldev/patbeagan/protocolrss/core/Source;
 	public field title Ljava/lang/String;
 	public fun <init> ()V
-	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ldev/patbeagan/rss/Enclosure;Ldev/patbeagan/rss/Guid;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/Source;)V
-	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ldev/patbeagan/rss/Enclosure;Ldev/patbeagan/rss/Guid;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/Source;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Enclosure;Ldev/patbeagan/protocolrss/core/Guid;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Source;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Enclosure;Ldev/patbeagan/protocolrss/core/Guid;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Source;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
-	public final fun component10 ()Ldev/patbeagan/rss/Source;
+	public final fun component10 ()Ldev/patbeagan/protocolrss/core/Source;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/util/List;
 	public final fun component5 ()Ljava/lang/String;
-	public final fun component6 ()Ldev/patbeagan/rss/Enclosure;
-	public final fun component7 ()Ldev/patbeagan/rss/Guid;
+	public final fun component6 ()Ldev/patbeagan/protocolrss/core/Enclosure;
+	public final fun component7 ()Ldev/patbeagan/protocolrss/core/Guid;
 	public final fun component8 ()Ljava/lang/String;
 	public final fun component9 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ldev/patbeagan/rss/Enclosure;Ldev/patbeagan/rss/Guid;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/Source;)Ldev/patbeagan/rss/Item;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Item;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ldev/patbeagan/rss/Enclosure;Ldev/patbeagan/rss/Guid;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/rss/Source;ILjava/lang/Object;)Ldev/patbeagan/rss/Item;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Enclosure;Ldev/patbeagan/protocolrss/core/Guid;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Source;)Ldev/patbeagan/protocolrss/core/Item;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Item;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Enclosure;Ldev/patbeagan/protocolrss/core/Guid;Ljava/lang/String;Ljava/lang/String;Ldev/patbeagan/protocolrss/core/Source;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Item;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Rss {
-	public static final field Companion Ldev/patbeagan/rss/Rss$Companion;
-	public field channel Ldev/patbeagan/rss/Channel;
+public final class dev/patbeagan/protocolrss/core/Rss {
+	public static final field Companion Ldev/patbeagan/protocolrss/core/Rss$Companion;
+	public field channel Ldev/patbeagan/protocolrss/core/Channel;
 	public field version Ljava/lang/String;
 	public fun <init> ()V
-	public fun <init> (Ldev/patbeagan/rss/Channel;Ljava/lang/String;)V
-	public synthetic fun <init> (Ldev/patbeagan/rss/Channel;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun addItem (Ldev/patbeagan/rss/Item;)V
-	public final fun component1 ()Ldev/patbeagan/rss/Channel;
+	public fun <init> (Ldev/patbeagan/protocolrss/core/Channel;Ljava/lang/String;)V
+	public synthetic fun <init> (Ldev/patbeagan/protocolrss/core/Channel;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun addItem (Ldev/patbeagan/protocolrss/core/Item;)V
+	public final fun component1 ()Ldev/patbeagan/protocolrss/core/Channel;
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ldev/patbeagan/rss/Channel;Ljava/lang/String;)Ldev/patbeagan/rss/Rss;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Rss;Ldev/patbeagan/rss/Channel;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/rss/Rss;
+	public final fun copy (Ldev/patbeagan/protocolrss/core/Channel;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Rss;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Rss;Ldev/patbeagan/protocolrss/core/Channel;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Rss;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public final fun toXML (Ldev/patbeagan/rss/RssWriter;)Ljava/lang/String;
-	public static synthetic fun toXML$default (Ldev/patbeagan/rss/Rss;Ldev/patbeagan/rss/RssWriter;ILjava/lang/Object;)Ljava/lang/String;
+	public final fun toXML (Ldev/patbeagan/protocolrss/util/RssWriter;)Ljava/lang/String;
+	public static synthetic fun toXML$default (Ldev/patbeagan/protocolrss/core/Rss;Ldev/patbeagan/protocolrss/util/RssWriter;ILjava/lang/Object;)Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Rss$Companion {
-	public final fun create (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/rss/Rss;
-	public final fun from (Ljava/io/File;Ldev/patbeagan/rss/RssReader;)Ldev/patbeagan/rss/Rss;
-	public final fun from (Ljava/lang/String;Ldev/patbeagan/rss/RssReader;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/rss/Rss;
-	public static synthetic fun from$default (Ldev/patbeagan/rss/Rss$Companion;Ljava/io/File;Ldev/patbeagan/rss/RssReader;ILjava/lang/Object;)Ldev/patbeagan/rss/Rss;
-	public static synthetic fun from$default (Ldev/patbeagan/rss/Rss$Companion;Ljava/lang/String;Ldev/patbeagan/rss/RssReader;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ldev/patbeagan/rss/Rss;
+public final class dev/patbeagan/protocolrss/core/Rss$Companion {
+	public final fun create (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/protocolrss/core/Rss;
+	public final fun from (Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssReader;)Ldev/patbeagan/protocolrss/core/Rss;
+	public final fun from (Ljava/lang/String;Ldev/patbeagan/protocolrss/util/RssReader;Lkotlin/jvm/functions/Function1;)Ldev/patbeagan/protocolrss/core/Rss;
+	public static synthetic fun from$default (Ldev/patbeagan/protocolrss/core/Rss$Companion;Ljava/io/File;Ldev/patbeagan/protocolrss/util/RssReader;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Rss;
+	public static synthetic fun from$default (Ldev/patbeagan/protocolrss/core/Rss$Companion;Ljava/lang/String;Ldev/patbeagan/protocolrss/util/RssReader;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Rss;
 }
 
-public final class dev/patbeagan/rss/RssReader {
-	public fun <init> ()V
-	public fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;)V
-	public synthetic fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun convertToRSS (Ljava/lang/String;)Ldev/patbeagan/rss/Rss;
-	public final fun readFromFile (Ljava/io/File;)Ldev/patbeagan/rss/Rss;
-}
-
-public final class dev/patbeagan/rss/RssWriter {
-	public static final field Companion Ldev/patbeagan/rss/RssWriter$Companion;
-	public fun <init> ()V
-	public fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;)V
-	public synthetic fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun convertToXML (Ldev/patbeagan/rss/Rss;)Ljava/lang/String;
-	public final fun writeToFile (Ldev/patbeagan/rss/Rss;Ljava/io/File;)V
-}
-
-public final class dev/patbeagan/rss/RssWriter$Companion {
-}
-
-public final class dev/patbeagan/rss/SkipDays {
+public final class dev/patbeagan/protocolrss/core/SkipDays {
 	public final field day Ljava/util/List;
 	public fun <init> (Ljava/util/List;)V
 	public final fun component1 ()Ljava/util/List;
-	public final fun copy (Ljava/util/List;)Ldev/patbeagan/rss/SkipDays;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/SkipDays;Ljava/util/List;ILjava/lang/Object;)Ldev/patbeagan/rss/SkipDays;
+	public final fun copy (Ljava/util/List;)Ldev/patbeagan/protocolrss/core/SkipDays;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/SkipDays;Ljava/util/List;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/SkipDays;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/SkipHours {
+public final class dev/patbeagan/protocolrss/core/SkipHours {
 	public final field hour Ljava/util/List;
 	public fun <init> (Ljava/util/List;)V
 	public final fun component1 ()Ljava/util/List;
-	public final fun copy (Ljava/util/List;)Ldev/patbeagan/rss/SkipHours;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/SkipHours;Ljava/util/List;ILjava/lang/Object;)Ldev/patbeagan/rss/SkipHours;
+	public final fun copy (Ljava/util/List;)Ldev/patbeagan/protocolrss/core/SkipHours;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/SkipHours;Ljava/util/List;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/SkipHours;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/Source {
+public final class dev/patbeagan/protocolrss/core/Source {
 	public field source Ljava/lang/String;
 	public field url Ljava/lang/String;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/rss/Source;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/Source;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/rss/Source;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Source;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/Source;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/Source;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class dev/patbeagan/rss/TextInput {
+public final class dev/patbeagan/protocolrss/core/TextInput {
 	public field description Ljava/lang/String;
 	public field link Ljava/lang/String;
 	public field name Ljava/lang/String;
@@ -262,10 +237,35 @@ public final class dev/patbeagan/rss/TextInput {
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/rss/TextInput;
-	public static synthetic fun copy$default (Ldev/patbeagan/rss/TextInput;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/rss/TextInput;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/TextInput;
+	public static synthetic fun copy$default (Ldev/patbeagan/protocolrss/core/TextInput;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/patbeagan/protocolrss/core/TextInput;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/patbeagan/protocolrss/util/Const {
+	public static final field INSTANCE Ldev/patbeagan/protocolrss/util/Const;
+	public static final field defaultString Ljava/lang/String;
+}
+
+public final class dev/patbeagan/protocolrss/util/RssReader {
+	public fun <init> ()V
+	public fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;)V
+	public synthetic fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun convertToRSS (Ljava/lang/String;)Ldev/patbeagan/protocolrss/core/Rss;
+	public final fun readFromFile (Ljava/io/File;)Ldev/patbeagan/protocolrss/core/Rss;
+}
+
+public final class dev/patbeagan/protocolrss/util/RssWriter {
+	public static final field Companion Ldev/patbeagan/protocolrss/util/RssWriter$Companion;
+	public fun <init> ()V
+	public fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;)V
+	public synthetic fun <init> (Lcom/fasterxml/jackson/dataformat/xml/XmlMapper;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun convertToXML (Ldev/patbeagan/protocolrss/core/Rss;)Ljava/lang/String;
+	public final fun writeToFile (Ldev/patbeagan/protocolrss/core/Rss;Ljava/io/File;)V
+}
+
+public final class dev/patbeagan/protocolrss/util/RssWriter$Companion {
 }
 

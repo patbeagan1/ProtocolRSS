@@ -1,7 +1,9 @@
-package dev.patbeagan.rss
+package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.annotation.JsonRootName
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+import dev.patbeagan.protocolrss.util.RssReader
+import dev.patbeagan.protocolrss.util.RssWriter
 import java.io.File
 
 /**

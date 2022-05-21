@@ -1,10 +1,10 @@
-package dev.patbeagan.rss
+package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText
 
 /**
- * <source> is an optional sub-element of <item>.
+ * `<source>` is an optional sub-element of `<item>`.
  *
  * Its value is the name of the RSS channel that the item came from, derived from its <title>.
  * It has one required attribute, url, which links to the XMLization of the source.

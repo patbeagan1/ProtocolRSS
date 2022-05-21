@@ -4,6 +4,7 @@ plugins {
     kotlin("jvm") version "1.6.21"
     id("org.jlleitschuh.gradle.ktlint") version "10.3.0"
     id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.10.0"
+    id("org.jetbrains.dokka") version "1.6.21"
     application
     jacoco
     `java-library`
@@ -20,10 +21,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
     api("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.3")
-    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+
+    testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2") // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
 }
 
 java {

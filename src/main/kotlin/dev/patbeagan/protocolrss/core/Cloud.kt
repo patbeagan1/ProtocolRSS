@@ -1,9 +1,9 @@
-package dev.patbeagan.rss
+package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 
 /**
- * <cloud> is an optional sub-element of <channel>.
+ * `<cloud>` is an optional sub-element of `<channel>`.
  *
  * It specifies a web service that supports the rssCloud interface which can be implemented in HTTP-POST, XML-RPC or SOAP 1.1.
  *

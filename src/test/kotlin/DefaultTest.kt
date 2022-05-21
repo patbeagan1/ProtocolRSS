@@ -1,5 +1,5 @@
-import dev.patbeagan.rss.Rss
-import dev.patbeagan.rss.RssWriter
+import dev.patbeagan.protocolrss.core.Rss
+import dev.patbeagan.protocolrss.util.RssWriter
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 

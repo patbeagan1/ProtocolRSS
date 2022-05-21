@@ -1,15 +1,15 @@
-package dev.patbeagan.rss
+package dev.patbeagan.protocolrss.util
 
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.databind.SerializationFeature
-import com.fasterxml.jackson.databind.exc.InvalidDefinitionException
 import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
+import dev.patbeagan.protocolrss.core.Rss
 import java.io.File
-import java.io.FileInputStream
 import java.io.FileNotFoundException
+import java.io.FileOutputStream
 
-class RssReader(
+class RssWriter(
     private val xmlMapper: XmlMapper = XmlMapper(
         JacksonXmlModule().apply { setDefaultUseWrapper(false) }
     ).apply {
@@ -18,21 +18,19 @@ class RssReader(
         setSerializationInclusion(JsonInclude.Include.NON_NULL)
     }
 ) {
-    fun convertToRSS(data: String): Rss? = try {
-        xmlMapper.readValue(data, Rss::class.java)
-    } catch (e: InvalidDefinitionException) {
-        println("Invalid XML file.\nFound: $e")
-        null
-    }
+    fun convertToXML(data: Rss) = "$header\n${xmlMapper.writeValueAsString(data)}"
 
-    fun readFromFile(file: File): Rss? {
+    fun writeToFile(data: Rss, file: File) {
         try {
-            FileInputStream(file).use { fileInputStream ->
-                return fileInputStream.readAllBytes().toString().let { convertToRSS(it) }
+            FileOutputStream(file).use {
+                convertToXML(data).forEach { c -> it.write(c.code) }
             }
         } catch (e: FileNotFoundException) {
             println("File Not Found: $e")
         }
-        return null
+    }
+
+    companion object {
+        private const val header = "<?xml version=\"1.0\"?>"
     }
 }

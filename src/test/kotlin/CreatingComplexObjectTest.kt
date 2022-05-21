@@ -1,4 +1,4 @@
-import dev.patbeagan.rss.Rss
+import dev.patbeagan.protocolrss.core.Rss
 import org.junit.jupiter.api.Test
 
 class CreatingComplexObjectTest {
