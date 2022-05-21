@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.6.21"
     id("org.jlleitschuh.gradle.ktlint") version "10.3.0"
+    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.10.0"
     application
     `java-library`
     `maven-publish`
