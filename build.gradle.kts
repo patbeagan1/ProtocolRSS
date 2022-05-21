@@ -1,4 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.dokka.gradle.DokkaTask
+import java.net.URL
 
 plugins {
     kotlin("jvm") version "1.6.21"
@@ -32,6 +34,28 @@ java {
     withSourcesJar()
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
+/**
+ * https://github.com/Kotlin/dokka
+ * https://kotlin.github.io/dokka/1.5.30/user_guide/gradle/usage/
+ */
+tasks.dokkaHtml {
+    outputDirectory.set(buildDir.resolve("docs"))
+    dokkaSourceSets {
+        configureEach {
+            reportUndocumented.set(true)
+            skipEmptyPackages.set(true)
+            sourceLink {
+                localDirectory.set(projectDir.resolve("src/main/kotlin"))
+                remoteUrl.set(
+                    URL("https://github.com/patbeagan1/ProtocolRSS/blob/master/src/main/kotlin")
+                )
+                remoteLineSuffix.set("#L")
+            }
+            jdkVersion.set(11)
+        }
     }
 }
 
