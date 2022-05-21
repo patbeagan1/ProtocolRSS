@@ -36,7 +36,7 @@ internal class PrintTest {
                     port = 80,
                     path = "/tmp/test",
                     registerProcedure = "procedure",
-                    protocol = "https"
+                    protocol = Cloud.Protocol.REST
                 ),
                 copyright = "copyright",
                 docs = "docs",

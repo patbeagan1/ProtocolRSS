@@ -171,7 +171,7 @@ data class Channel(
      */
     @JvmField
     @field:JacksonXmlProperty
-    var ttl: String? = null,
+    var ttl: Int? = null,
 
     /**
      * Email address for person responsible for technical issues relating to channel.
