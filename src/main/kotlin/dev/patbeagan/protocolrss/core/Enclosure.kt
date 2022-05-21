@@ -1,6 +1,7 @@
 package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+import java.net.URL
 
 /**
  * `<enclosure>` is an optional sub-element of `<item>`.
@@ -15,14 +16,23 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
  */
 data class Enclosure(
 
+    /**
+     * The location of the file to be downloaded.
+     */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    var url: String,
+    var url: URL,
 
+    /**
+     * The length of the file to tbe downloaded.
+     */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    var length: String,
+    var length: Long,
 
+    /**
+     * A mime type that indicates the type of file which should be downloaded.
+     */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
     var type: String,

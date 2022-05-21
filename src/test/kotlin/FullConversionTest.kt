@@ -9,6 +9,7 @@ import dev.patbeagan.protocolrss.core.Rss
 import dev.patbeagan.protocolrss.util.RssReader
 import dev.patbeagan.protocolrss.util.RssWriter
 import org.junit.jupiter.api.Test
+import java.net.URL
 import kotlin.test.assertEquals
 
 internal class FullConversionTest {
@@ -87,7 +88,7 @@ internal class FullConversionTest {
             item = listOf(
                 Item(
                     title = "Star City",
-                    link = "http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp",
+                    link = URL("http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp"),
                     description = "How do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia's &amp;lt;a href=\"http://howe.iki.rssi.ru/GCTC/gctc_e.htm\"&amp;gt;Star City&amp;lt;/a&amp;gt;.",
                     pubDate = "Tue, 03 Jun 2003 09:39:21 GMT",
                     guid = Guid("http://liftoff.msfc.nasa.gov/2003/06/03.html#item573"),
@@ -99,14 +100,14 @@ internal class FullConversionTest {
                 ),
                 Item(
                     title = "The Engine That Does More",
-                    link = "http://liftoff.msfc.nasa.gov/news/2003/news-VASIMR.asp",
+                    link = URL("http://liftoff.msfc.nasa.gov/news/2003/news-VASIMR.asp"),
                     description = "Before man travels to Mars, NASA hopes to design new engines that will let us fly through the Solar System more quickly.  The proposed VASIMR engine would do that.",
                     pubDate = "Tue, 27 May 2003 08:37:32 GMT",
                     guid = Guid("http://liftoff.msfc.nasa.gov/2003/05/27.html#item571"),
                 ),
                 Item(
                     title = "Astronauts' Dirty Laundry",
-                    link = "http://liftoff.msfc.nasa.gov/news/2003/news-laundry.asp",
+                    link = URL("http://liftoff.msfc.nasa.gov/news/2003/news-laundry.asp"),
                     description = "Compared to earlier spacecraft, the International Space Station has many luxuries, but laundry facilities are not one of them.  Instead, astronauts have other options.",
                     pubDate = "Tue, 20 May 2003 08:56:02 GMT",
                     guid = Guid("http://liftoff.msfc.nasa.gov/2003/05/20.html#item570"),

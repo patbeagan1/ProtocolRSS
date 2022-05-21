@@ -2,6 +2,7 @@ package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText
+import java.net.URL
 
 /**
  * `<source>` is an optional sub-element of `<item>`.
@@ -21,7 +22,7 @@ data class Source(
      */
     @JvmField
     @field:JacksonXmlProperty(isAttribute = true)
-    var url: String,
+    var url: URL,
     /**
      * The name of the source that this item comes from.
      */

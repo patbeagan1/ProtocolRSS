@@ -10,6 +10,7 @@ import dev.patbeagan.protocolrss.core.SkipHours
 import dev.patbeagan.protocolrss.core.Source
 import dev.patbeagan.protocolrss.core.TextInput
 import org.junit.jupiter.api.Test
+import java.net.URL
 import kotlin.test.assertEquals
 
 class CreatingCompleteObjectTest {
@@ -57,17 +58,18 @@ class CreatingCompleteObjectTest {
                     ),
                     comments = "comment",
                     enclosure = Enclosure(
-                        url = "url",
-                        length = "length",
-                        type = "type",
+                        url = URL("https://example.com"),
+                        length = 10,
+                        type = "image/png",
                     ),
                     guid = Guid(
                         guid = "guid", isPermlink = false
                     ),
-                    link = "link",
+                    link = URL("http://www.tomalak.org/links2.xml"),
                     pubDate = "May 20, 2022",
                     source = Source(
-                        "url", "source"
+                        url = URL("http://www.tomalak.org/links2.xml"),
+                        source = "source"
                     ),
                 )
             )
@@ -108,15 +110,15 @@ class CreatingCompleteObjectTest {
                 <webMaster>Pat</webMaster>
                 <item>
                   <title>title</title>
-                  <link>link</link>
+                  <link>http://www.tomalak.org/links2.xml</link>
                   <description>desc</description>
                   <pubDate>May 20, 2022</pubDate>
                   <guid isPermlink="false">guid</guid>
                   <author>pat</author>
                   <category domain="domain">category</category>
                   <comments>comment</comments>
-                  <enclosure url="url" length="length" type="type"/>
-                  <source url="url">source</source>
+                  <enclosure url="https://example.com" length="10" type="image/png"/>
+                  <source url="http://www.tomalak.org/links2.xml">source</source>
                 </item>
                 <category domain="domain">category</category>
                 <cloud domain="https://example.com" port="80" path="/test" registerProcedure="cgi" protocol="http-post"/>

@@ -2,6 +2,7 @@ package dev.patbeagan.protocolrss.core
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+import java.net.URL
 
 @JsonPropertyOrder(
     "title",
@@ -99,7 +100,7 @@ data class Item(
      */
     @JvmField
     @field:JacksonXmlProperty
-    var link: String? = null,
+    var link: URL? = null,
 
     /**
      * Indicates when the item was published.
