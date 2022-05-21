@@ -4,11 +4,11 @@ import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import org.junit.jupiter.api.Test
 import rss.Channel
-import rss.Guid
-import rss.Item
-import rss.Rss
-import rss.RssReader
-import rss.RssWriter
+import dev.patbeagan.rss.Guid
+import dev.patbeagan.rss.Item
+import dev.patbeagan.rss.Rss
+import dev.patbeagan.rss.RssReader
+import dev.patbeagan.rss.RssWriter
 import kotlin.test.assertEquals
 
 internal class FullConversionTest {

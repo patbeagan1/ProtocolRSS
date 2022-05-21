@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test
-import rss.Rss
-import rss.RssWriter
+import dev.patbeagan.rss.Rss
+import dev.patbeagan.rss.RssWriter
 import kotlin.test.assertEquals
 
 class DefaultTest {

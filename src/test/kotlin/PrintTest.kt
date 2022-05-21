@@ -1,15 +1,15 @@
 import org.junit.jupiter.api.Test
-import rss.Category
+import dev.patbeagan.rss.Category
 import rss.Channel
-import rss.Cloud
-import rss.Enclosure
-import rss.Guid
-import rss.Image
-import rss.Item
-import rss.Rss
-import rss.RssWriter
-import rss.SkipDays
-import rss.Source
+import dev.patbeagan.rss.Cloud
+import dev.patbeagan.rss.Enclosure
+import dev.patbeagan.rss.Guid
+import dev.patbeagan.rss.Image
+import dev.patbeagan.rss.Item
+import dev.patbeagan.rss.Rss
+import dev.patbeagan.rss.RssWriter
+import dev.patbeagan.rss.SkipDays
+import dev.patbeagan.rss.Source
 import java.io.File
 import java.time.Instant
 

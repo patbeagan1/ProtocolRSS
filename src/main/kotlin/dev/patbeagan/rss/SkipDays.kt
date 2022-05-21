@@ -1,4 +1,4 @@
-package rss
+package dev.patbeagan.rss
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 
