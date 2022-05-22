@@ -15,7 +15,7 @@ internal class RssFileReaderTest {
     @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun `test reading from file`() = runTest {
-        val resource: URL = this::class.java.classLoader.getResource("out-feed.xml")
+        val resource: URL = this::class.java.classLoader.getResource("file-reader-test-feed.xml")
         println(resource)
         val toURI = resource.toURI()
         val rss = RssFileReader().readFromFile(File(toURI))
