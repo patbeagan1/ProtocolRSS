@@ -1,8 +1,8 @@
 # ProtocolRSS
 A kotlin implementation of the RSS protocol. Derived from https://www.rssboard.org/rss-specification
 
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpatbeagan1%2FProtocolRSS%2Fbadge%3Fref%3Ddevelop&style=plastic)](https://actions-badge.atrox.dev/patbeagan1/ProtocolRSS/goto?ref=develop)
-
+[![CI](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/main.yml/badge.svg)](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/main.yml)
+[![Documentation](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/pages/pages-build-deployment)
 ## 🛠 Installation
 
 ```groovy
