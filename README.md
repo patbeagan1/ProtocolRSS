@@ -1,7 +1,7 @@
 # ProtocolRSS
 A kotlin implementation of the RSS protocol. Derived from https://www.rssboard.org/rss-specification
 
-[![CI](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/main.yml/badge.svg)](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/main.yml)
+[![Verify Build](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/main.yml/badge.svg)](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/main.yml)
 [![Documentation](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/pages/pages-build-deployment)
 ## 🛠 Installation
 
