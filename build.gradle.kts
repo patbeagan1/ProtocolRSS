@@ -14,7 +14,7 @@ plugins {
 
 // /////////////////////////
 group = "dev.patbeagan1"
-version = "0.4-SNAPSHOT"
+version = "0.1.0"
 // /////////////////////////
 
 repositories {
