@@ -1,0 +1,11 @@
+name: "ProtocolRSS CI"
+description: "Running ci for ProtocolRSS on push"
+author: "patbeagan1@github.com"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "zap"
+  color: "yellow"
