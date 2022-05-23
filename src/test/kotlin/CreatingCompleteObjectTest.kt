@@ -63,7 +63,7 @@ class CreatingCompleteObjectTest {
                         type = "image/png",
                     ),
                     guid = Guid(
-                        guid = "guid", isPermlink = false
+                        guid = "guid", isPermalink = false
                     ),
                     link = URL("http://www.tomalak.org/links2.xml"),
                     pubDate = "May 20, 2022",
@@ -113,7 +113,7 @@ class CreatingCompleteObjectTest {
                   <link>http://www.tomalak.org/links2.xml</link>
                   <description>desc</description>
                   <pubDate>May 20, 2022</pubDate>
-                  <guid isPermlink="false">guid</guid>
+                  <guid isPermalink="false">guid</guid>
                   <author>pat</author>
                   <category domain="domain">category</category>
                   <comments>comment</comments>

@@ -11,7 +11,7 @@
       <title>my-title</title>
       <description>description</description>
       <pubDate>now</pubDate>
-      <guid isPermlink="true">guid2</guid>
+      <guid isPermalink="true">guid2</guid>
       <author>author</author>
       <comments>commenturl</comments>
     </item>
@@ -19,7 +19,7 @@
       <title>third-title</title>
       <description>description3</description>
       <pubDate>now</pubDate>
-      <guid isPermlink="true">guid23</guid>
+      <guid isPermalink="true">guid23</guid>
       <author>author</author>
       <comments>commenturl</comments>
     </item>
@@ -27,7 +27,7 @@
       <title>title</title>
       <description>description</description>
       <pubDate>now</pubDate>
-      <guid isPermlink="true">guid</guid>
+      <guid isPermalink="true">guid</guid>
       <author>author</author>
       <comments>commenturl</comments>
     </item>
