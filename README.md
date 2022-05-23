@@ -18,7 +18,7 @@ dependencies {
 
 ## 📖 Documentation
 
-Docs can be found [here](https://patbeagan1.github.io/ProtocolRSS/index.html)
+Docs can be found [here](https://patbeagan1.github.io/ProtocolRSS/index.html)!
 
 ## 🌈 Demo
 
