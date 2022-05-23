@@ -107,7 +107,7 @@ public final class dev/patbeagan/protocolrss/core/Enclosure {
 
 public final class dev/patbeagan/protocolrss/core/Guid {
 	public field guid Ljava/lang/String;
-	public field isPermlink Ljava/lang/Boolean;
+	public field isPermalink Ljava/lang/Boolean;
 	public fun <init> ()V
 	public fun <init> (Ljava/lang/String;Ljava/lang/Boolean;)V
 	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
