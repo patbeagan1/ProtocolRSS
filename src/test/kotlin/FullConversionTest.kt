@@ -85,7 +85,7 @@ internal class FullConversionTest {
             generator = "Weblog Editor 2.0",
             managingEditor = "editor@example.com",
             webMaster = "webmaster@example.com",
-            item = listOf(
+            items = listOf(
                 Item(
                     title = "Star City",
                     link = URL("http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp"),

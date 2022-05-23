@@ -31,7 +31,7 @@ internal class RssFileReaderTest {
                 copyright = "copyright",
                 docs = "docs",
                 generator = "generator",
-                item = listOf(
+                items = listOf(
                     Item(
                         title = "my-title",
                         description = "description",

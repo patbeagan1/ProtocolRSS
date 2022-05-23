@@ -93,8 +93,8 @@ data class Channel(
     var image: Image? = null,
 
     @JvmField
-    @field:JacksonXmlProperty
-    var item: List<Item>? = null,
+    @field:JacksonXmlProperty(localName = "item")
+    var items: List<Item>? = null,
 
     /**
      * The language the channel is written in.

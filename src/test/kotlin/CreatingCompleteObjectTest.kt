@@ -46,7 +46,7 @@ class CreatingCompleteObjectTest {
                 width = 88,
                 height = 100,
             )
-            item = listOf(
+            items = listOf(
                 Item(
                     title = "title",
                     description = "desc",
