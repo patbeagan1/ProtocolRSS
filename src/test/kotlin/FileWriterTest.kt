@@ -7,8 +7,10 @@ import dev.patbeagan.protocolrss.core.Item
 import dev.patbeagan.protocolrss.core.Rss
 import dev.patbeagan.protocolrss.core.SkipDays
 import dev.patbeagan.protocolrss.util.RssWriter
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
+import kotlinx.coroutines.withContext
 import org.junit.jupiter.api.Test
 import java.io.File
 import java.net.URL
@@ -89,7 +91,11 @@ internal class FileWriterTest {
             )
         )
         runTest {
-            rssWriter.serialize(data).writeToFile(File("out-feed2.xml"))
+            rssWriter.serialize(data).writeToFile(
+                withContext(Dispatchers.IO) {
+                    File.createTempFile("out-feed", ".xml")
+                }
+            )
         }
         println(rssWriter.serialize(data))
     }
