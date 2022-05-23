@@ -49,8 +49,8 @@ data class Channel(
      * [More info](https://www.rssboard.org/rss-specification#syndic8).
      */
     @JvmField
-    @field:JacksonXmlProperty
-    var category: List<Category>? = null,
+    @field:JacksonXmlProperty(localName = "category")
+    var categories: List<Category>? = null,
 
     /**
      * Allows processes to register with a cloud to be notified of updates to the channel,

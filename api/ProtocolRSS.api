@@ -13,7 +13,7 @@ public final class dev/patbeagan/protocolrss/core/Category {
 }
 
 public final class dev/patbeagan/protocolrss/core/Channel {
-	public field category Ljava/util/List;
+	public field categories Ljava/util/List;
 	public field cloud Ldev/patbeagan/protocolrss/core/Cloud;
 	public field copyright Ljava/lang/String;
 	public field description Ljava/lang/String;
@@ -144,7 +144,7 @@ public final class dev/patbeagan/protocolrss/core/Image {
 
 public final class dev/patbeagan/protocolrss/core/Item {
 	public field author Ljava/lang/String;
-	public field category Ljava/util/List;
+	public field categories Ljava/util/List;
 	public field comments Ljava/lang/String;
 	public field description Ljava/lang/String;
 	public field enclosure Ldev/patbeagan/protocolrss/core/Enclosure;

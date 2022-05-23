@@ -23,7 +23,7 @@ class CreatingCompleteObjectTest {
             title = "Title"
             link = URL("https://example.com")
             description = "Description"
-            category = listOf(
+            categories = listOf(
                 Category(
                     category = "category", domain = "domain"
                 )
@@ -51,7 +51,7 @@ class CreatingCompleteObjectTest {
                     title = "title",
                     description = "desc",
                     author = "pat",
-                    category = listOf(
+                    categories = listOf(
                         Category(
                             category = "category", domain = "domain"
                         )
