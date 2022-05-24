@@ -60,8 +60,8 @@ data class Item(
      * [More](https://www.rssboard.org/rss-specification#ltcategorygtSubelementOfLtitemgt).
      */
     @JvmField
-    @field:JacksonXmlProperty
-    var category: List<Category>? = null,
+    @field:JacksonXmlProperty(localName = "category")
+    var categories: List<Category>? = null,
 
     /**
      * URL of a page for comments relating to the item.

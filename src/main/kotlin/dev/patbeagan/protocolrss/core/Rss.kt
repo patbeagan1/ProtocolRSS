@@ -23,8 +23,8 @@ data class Rss(
     var version: String = "2.0.1",
 ) {
     fun addItem(item: Item) {
-        val itemList = this.channel.item
-        this.channel.item = if (itemList == null) {
+        val itemList = this.channel.items
+        this.channel.items = if (itemList == null) {
             listOf(item)
         } else {
             itemList + item

@@ -7,8 +7,10 @@ import dev.patbeagan.protocolrss.core.Item
 import dev.patbeagan.protocolrss.core.Rss
 import dev.patbeagan.protocolrss.core.SkipDays
 import dev.patbeagan.protocolrss.util.RssWriter
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
+import kotlinx.coroutines.withContext
 import org.junit.jupiter.api.Test
 import java.io.File
 import java.net.URL
@@ -45,7 +47,7 @@ internal class FileWriterTest {
                         title = "my-title",
                         description = "description",
                         author = "author",
-                        category = listOf(Category("cats", "cat")),
+                        categories = listOf(Category("cats", "cat")),
                         comments = "commenturl",
                         guid = Guid("guid2", true),
                         pubDate = Instant.now().toString(),
@@ -54,7 +56,7 @@ internal class FileWriterTest {
                         title = "third-title",
                         description = "description3",
                         author = "author",
-                        category = listOf(Category("cats", "cat")),
+                        categories = listOf(Category("cats", "cat")),
                         comments = "commenturl",
                         guid = Guid("guid23", true),
                         pubDate = Instant.now().toString(),
@@ -72,7 +74,7 @@ internal class FileWriterTest {
                                         </p>
                         """.trimIndent(),
                         author = "author",
-                        category = listOf(Category("cats", "cat")),
+                        categories = listOf(Category("cats", "cat")),
                         comments = "commenturl",
                         guid = Guid("guid", true),
                         pubDate = Instant.ofEpochSecond(1).toEpochMilli().toString(),
@@ -89,7 +91,11 @@ internal class FileWriterTest {
             )
         )
         runTest {
-            rssWriter.serialize(data).writeToFile(File("out-feed2.xml"))
+            rssWriter.serialize(data).writeToFile(
+                withContext(Dispatchers.IO) {
+                    File.createTempFile("out-feed", ".xml")
+                }
+            )
         }
         println(rssWriter.serialize(data))
     }

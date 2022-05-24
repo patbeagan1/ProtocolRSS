@@ -28,7 +28,7 @@ class ConvertingToRssTest {
             link = URL("https://example.com"),
             description = "A blog about me"
         ) {
-            item = listOf(
+            items = listOf(
                 Item(
                     title = "title",
                     description = "desc"
