@@ -7,14 +7,14 @@ $dokka.location:dev.patbeagan.protocolrss.core/Category/category/#/PointingToDec
 $dokka.location:dev.patbeagan.protocolrss.core/Category/domain/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-category/domain.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/index.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/Channel/#kotlin.String#java.net.URL#kotlin.String#kotlin.collections.List[dev.patbeagan.protocolrss.core.Category]?#dev.patbeagan.protocolrss.core.Cloud?#kotlin.String?#kotlin.String?#kotlin.String?#dev.patbeagan.protocolrss.core.Image?#kotlin.collections.List[dev.patbeagan.protocolrss.core.Item]?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#dev.patbeagan.protocolrss.core.SkipDays?#dev.patbeagan.protocolrss.core.SkipHours?#dev.patbeagan.protocolrss.core.TextInput?#kotlin.Int?#kotlin.String?/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/-channel.html
-$dokka.location:dev.patbeagan.protocolrss.core/Channel/category/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/category.html
+$dokka.location:dev.patbeagan.protocolrss.core/Channel/categories/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/categories.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/cloud/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/cloud.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/copyright/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/copyright.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/description/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/description.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/docs/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/docs.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/generator/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/generator.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/image/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/image.html
-$dokka.location:dev.patbeagan.protocolrss.core/Channel/item/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/item.html
+$dokka.location:dev.patbeagan.protocolrss.core/Channel/items/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/items.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/language/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/language.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/lastBuildDate/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/last-build-date.html
 $dokka.location:dev.patbeagan.protocolrss.core/Channel/link/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-channel/link.html
@@ -46,7 +46,7 @@ $dokka.location:dev.patbeagan.protocolrss.core/Enclosure/url/#/PointingToDeclara
 $dokka.location:dev.patbeagan.protocolrss.core/Guid///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-guid/index.html
 $dokka.location:dev.patbeagan.protocolrss.core/Guid/Guid/#kotlin.String#kotlin.Boolean?/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-guid/-guid.html
 $dokka.location:dev.patbeagan.protocolrss.core/Guid/guid/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-guid/guid.html
-$dokka.location:dev.patbeagan.protocolrss.core/Guid/isPermlink/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-guid/is-permlink.html
+$dokka.location:dev.patbeagan.protocolrss.core/Guid/isPermalink/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-guid/is-permalink.html
 $dokka.location:dev.patbeagan.protocolrss.core/Image///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-image/index.html
 $dokka.location:dev.patbeagan.protocolrss.core/Image/Image/#kotlin.String#kotlin.String#kotlin.String#kotlin.String?#kotlin.Int?#kotlin.Int?/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-image/-image.html
 $dokka.location:dev.patbeagan.protocolrss.core/Image/description/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-image/description.html
@@ -58,7 +58,7 @@ $dokka.location:dev.patbeagan.protocolrss.core/Image/width/#/PointingToDeclarati
 $dokka.location:dev.patbeagan.protocolrss.core/Item///PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/index.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/Item/#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.collections.List[dev.patbeagan.protocolrss.core.Category]?#kotlin.String?#dev.patbeagan.protocolrss.core.Enclosure?#dev.patbeagan.protocolrss.core.Guid?#java.net.URL?#kotlin.String?#dev.patbeagan.protocolrss.core.Source?/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/-item.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/author/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/author.html
-$dokka.location:dev.patbeagan.protocolrss.core/Item/category/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/category.html
+$dokka.location:dev.patbeagan.protocolrss.core/Item/categories/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/categories.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/comments/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/comments.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/description/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/description.html
 $dokka.location:dev.patbeagan.protocolrss.core/Item/enclosure/#/PointingToDeclaration/-protocol-r-s-s/dev.patbeagan.protocolrss.core/-item/enclosure.html
