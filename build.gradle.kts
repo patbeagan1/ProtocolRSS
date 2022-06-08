@@ -127,7 +127,25 @@ tasks.jacocoTestCoverageVerification {
     }
 }
 
+val githubCredentials: MavenArtifactRepository.() -> Unit = {
+    // property values are defined in ~/.gradle/gradle.properties
+    // environment variables can be stored in your ~/.bashrc or ~/.zshrc file.
+    credentials {
+        // this is your github username
+        username = project.findProperty("gpr.username") as String? ?: System.getenv("GITHUB_USERNAME")
+        // this is your personal access token. You can generate a new one here: https://github.com/settings/tokens
+        password = project.findProperty("gpr.personal_access_token") as String? ?: System.getenv("GITHUB_PERSONAL_ACCESS_TOKEN")
+    }
+}
+
 publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/patbeagan1/ProtocolRSS")
+            githubCredentials()
+        }
+    }
     publications {
         create<MavenPublication>("mavenJava") {
             artifactId = "protocol-rss"
@@ -143,7 +161,7 @@ publishing {
             pom {
                 name.set("ProtocolRSS")
                 description.set("A kotlin implementation of the RSS protocol. Derived from https://www.rssboard.org/rss-specification")
-                url.set("https://github.com/patbeagan1/ProtocolRSS")
+                url.set("https://maven.pkg.github.com/patbeagan1/ProtocolRSS")
                 licenses {
                     license {
                         name.set("The MIT License (MIT)")
