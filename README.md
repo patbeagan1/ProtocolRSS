@@ -5,13 +5,25 @@ A kotlin implementation of the RSS protocol. Derived from https://www.rssboard.o
 [![Documentation](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/patbeagan1/ProtocolRSS/actions/workflows/pages/pages-build-deployment)
 ## 🛠 Installation
 
-```groovy
-repositories {
-    mavenLocal() // more coming soon
+```kotlin
+// This credentials block can be reused for any packages published to Github Packages
+val githubCredentials: MavenArtifactRepository.() -> Unit = {
+    // property values are defined in ~/.gradle/gradle.properties
+    // environment variables can be defined in your ~/.bashrc or ~/.zshrc file.
+    credentials {
+        // this is your github username
+        username = project.findProperty("gpr.username") as String? ?: System.getenv("GITHUB_USERNAME")
+        // this is your personal access token. You can generate a new one here: https://github.com/settings/tokens
+        password = project.findProperty("gpr.personal_access_token") as String? ?: System.getenv("GITHUB_PERSONAL_ACCESS_TOKEN")
+    }
 }
 
+repositories {
+    maven("https://maven.pkg.github.com/patbeagan1/ProtocolRSS", githubCredentials)
+}
+
+val versionProtocolRss = "LATEST_VERSION"
 dependencies {
-    def versionProtocolRss = "0.4-SNAPSHOT"
     implementation("dev.patbeagan1:protocol-rss:$versionProtocolRss")
 }
 ```
