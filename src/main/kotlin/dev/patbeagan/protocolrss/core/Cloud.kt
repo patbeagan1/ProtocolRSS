@@ -33,22 +33,30 @@ data class Cloud(
     /**
      * The client's TCP port
      */
-    @JvmField @field:JacksonXmlProperty(isAttribute = true) var port: Int,
+    @JvmField
+    @field:JacksonXmlProperty(isAttribute = true)
+    var port: Int,
 
     /**
      * The client's remote procedure call path
      */
-    @JvmField @field:JacksonXmlProperty(isAttribute = true) var path: String,
+    @JvmField
+    @field:JacksonXmlProperty(isAttribute = true)
+    var path: String,
 
     /**
      * The name of the remote procedure the cloud should call on the client upon an update
      */
-    @JvmField @field:JacksonXmlProperty(isAttribute = true) var registerProcedure: String,
+    @JvmField
+    @field:JacksonXmlProperty(isAttribute = true)
+    var registerProcedure: String,
 
     /**
      * The string "xml-rpc" if the client employs XML-RPC, "soap" for SOAP and "http-post" for REST.
      */
-    @JvmField @field:JacksonXmlProperty(isAttribute = true) var protocol: Protocol,
+    @JvmField
+    @field:JacksonXmlProperty(isAttribute = true)
+    var protocol: Protocol,
 ) {
     enum class Protocol {
         @JsonProperty("xml-rpc")
